@@ -1,0 +1,143 @@
+html {
+  background-color: black;
+}
+
+.pic1 {
+position: relative;
+right: 20px;
+bottom: 210px;
+float: right;
+}
+
+.pic2 {
+  position: relative;
+  left: 5px;
+  bottom: 210px;
+  float: left;
+  }
+
+h1 {
+  font-family: cursive, 'Times New Roman', Times, serif;
+  font-size: 100px;
+  text-align: center;
+  color: white;
+  vertical-align: 100px;
+}
+
+h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.p1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  color: white;
+}
+
+li {
+  color: white;
+  text-indent: 5px;
+}
+
+h4 {
+  color: white;
+}
+
+.box {
+  width: 800px;
+  height: 500px;
+  border: 5px solid white;
+  margin: -60px auto;
+}
+
+.boxtop {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 50px;
+    padding-left: 130px;
+}
+
+.websiteinfo {
+  text-align: center;
+}
+
+.site1 {
+  text-align: center;
+}
+
+h3, h6 {
+  text-align: center;
+  color: white;
+}
+
+a {
+  background-color: black;
+  color: white;
+}
+
+.hidden--mobile {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hidden--mobile2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hidden--mobile3 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hidden--mobile4 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 550px) {
+  nav > .fa-bars {
+    display: none;
+    color: white;
+  }
+}
+
+/* in HTML: <ul class="hidden--mobile"> */
+@media (max-width: 550px) {
+.hidden--mobile {
+  display: none;
+}
+}
+
+.site1 {
+
+  display: flex;
+  flex-direction: column;
+}
+
+a:hover {
+ background-color: white;
+}
+
+a:hover {
+  color: black;
+}
+
+
+
+
+
