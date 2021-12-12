@@ -1,21 +1,21 @@
 import { Header, Nav, Main, Footer } from "./components";
-// import * as state from "./store";
+import * as state from "./store";
 import Navigo from "./node_modules/navigo";
-// import { capitalize } from "lodash";
+import { capitalize } from "lodash";
 
 const router = new Navigo(window.location.origin);
 
-// router
-//   .on({
-//     "/": () => render(state.Home),
-//     ":page": params => {
-//       let page = capitalize(params.page);
-//       render(state[page]);
-//     }
-//   })
-//   .resolve();
+router
+  .on({
+    "/": () => render(state.Home),
+    ":page": params => {
+      let page = capitalize(params.page);
+      render(state[page]);
+    }
+  })
+  .resolve();
 
-function render() {
+function render(st) {
   document.querySelector("#root").innerHTML = `
     ${Header()}
     ${Nav()}
@@ -37,6 +37,6 @@ function addEventListeners() {
     );
 
   // handle form submission with PrintFormOnSubmit module
-  // const form = document.querySelector("form");
-  // PrintFormOnSubmit(form);
+  const form = document.querySelector("form");
+  PrintFormOnSubmit(form);
 }

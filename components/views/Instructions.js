@@ -1,6 +1,7 @@
 import html from "html-literal";
 
-export default () => html`
+export default st => html`
+<section id="instructions">
 <h3> Instructions </h3>
 <p> First, select the number of players for the game. Next, tap the “DEAL” button,
     and allow the website to create a hand for each player. The player with the “7-7”
@@ -34,5 +35,6 @@ export default () => html`
         <li>If no one has the “7-7” card at the beginning of the game, the player with the HIGHEST DOUBLE NUMBER CARD plays first. Play continues with the player to the left of this player playing next.
             Only the FIRST double number card can have cards played on all four sides of it. </li>
     </ul>
+    </section>
 
 `;
