@@ -20,6 +20,8 @@
   "dependencies": {
     "bundler": "^0.8.0",
     "html-literal": "^1.1.0",
+    "lodash": "^4.17.21",
+    "navigo": "^7.1.3",
     "node": "^15.8.0",
     "parcel": "^2.0.1",
     "yargs-parser": ">=13.1.2"

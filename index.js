@@ -1,9 +1,9 @@
 import { Header, Nav, Main, Footer } from "./components";
 // import * as state from "./store";
-// import Navigo from "navigo";
+import Navigo from "./node_modules/navigo";
 // import { capitalize } from "lodash";
 
-// const router = new Navigo(window.location.origin);
+const router = new Navigo(window.location.origin);
 
 // router
 //   .on({
