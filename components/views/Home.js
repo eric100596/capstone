@@ -1,5 +1,5 @@
 import html from "html-literal";
-import logo from "assets/Dbl7Logo.png";
+import logo from "../../assets/Dbl7Logo.png";
 
 export default () => html`
   <div class="boxtop">
@@ -12,10 +12,10 @@ export default () => html`
   <br />
   <section>
     <section id="pic1">
-      <img src="${Dbl7Logo.png}" />
+      <img src="${logo}" />
     </section>
     <section id="pic2">
-      <img src="${Dbl7Logo.png}" />
+      <img src="${logo}" />
     </section>
   </section>
 `;
