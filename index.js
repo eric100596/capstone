@@ -37,6 +37,6 @@ function addEventListeners() {
     );
 
   // handle form submission with PrintFormOnSubmit module
-  const form = document.querySelector("form");
-  PrintFormOnSubmit(form);
+  // const form = document.querySelector("form");
+  // PrintFormOnSubmit(form);
 }
