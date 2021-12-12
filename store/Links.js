@@ -1,7 +1,7 @@
 export default [
-export { title: "Home", text: "Home" },
-export { title: "Instructions", text: "Instructions" },
-export { title: "About", text: "About this game" },
-export { title: "Strategy", text: "Strategy" },
-export { title: "Contact", text: "Contact"}
-]
+  { title: "Home", text: "Home" },
+  { title: "Instructions", text: "Instructions" },
+  { title: "About", text: "About this game" },
+  { title: "Strategy", text: "Strategy" },
+  { title: "Contact", text: "Contact" }
+];
