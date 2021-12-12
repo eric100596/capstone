@@ -1,6 +1,6 @@
 import html from "html-literal";
 
-export default st => html`
+export default () => html`
   <section>
     <div class="site1">
       <a href="http://www.know-ble.com">Check out this website!</a>
@@ -27,7 +27,7 @@ export default st => html`
         />
 
         <label for="phone">Phone:</label>
-        <input type="tel" name="fone" id="fone" />
+        <input type="tel" name="phone" id="phone" />
 
         <div>
           <br />
