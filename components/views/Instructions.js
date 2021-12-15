@@ -1,6 +1,6 @@
 import html from "html-literal";
 
-export default st => html`
+export default () => html`
 <section id="instructions">
 <h3> Instructions </h3>
 <p> First, select the number of players for the game. Next, tap the “DEAL” button,

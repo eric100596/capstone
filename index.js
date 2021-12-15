@@ -3,7 +3,7 @@ import * as state from "./store";
 import Navigo from "./node_modules/navigo";
 import { capitalize } from "lodash";
 
-const router = new Navigo(window.location.origin);
+const router = new Navigo("/");
 
 router
   .on({
@@ -16,19 +16,20 @@ router
   .resolve();
 
 function render(st) {
+  console.log(st);
   document.querySelector("#root").innerHTML = `
-    ${Header()}
+    ${Header(st)}
     ${Nav(state.Links)}
-    ${Main()}
+    ${Main(st)}
     ${Footer()}
   `;
   router.updatePageLinks();
-  addEventListeners();
+  addEventListeners(st);
 }
 
 render();
 
-function addEventListeners() {
+function addEventListeners(st) {
   // add menu toggle to bars icon in nav bar
   document
     .querySelector(".fa-bars")

@@ -1,6 +1,6 @@
 import html from "html-literal";
 
-export default st => html`
+export default () => html`
   <section>
     <h3>About This Game</h3>
     <p>
