@@ -3,10 +3,8 @@ html {
 }
 
 .pic1 {
-position: relative;
-right: 20px;
-bottom: 210px;
-float: right;
+display: flex;
+justify-content: space-between;
 }
 
 .pic2 {
