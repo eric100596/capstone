@@ -24,15 +24,6 @@ function render(st) {
 
 render();
 
-function addEventListeners (st) {
-  // add event listeners to Nav items for navigation
-  document.querySelectorAll("nav a").forEach(navLink =>
-    navLink.addEventListener("click", event => {
-      event.preventDefault();
-      render(state[event.target.title]);
-    })
-  );
-
 function addEventListeners(st) {
   // add menu toggle to bars icon in nav bar
   document
