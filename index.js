@@ -1,8 +1,9 @@
 import { Header, Nav, Main, Footer } from "./components";
 import * as state from "./store";
+import axios from "axios";
+
 import Navigo from "navigo";
 import { capitalize } from "lodash";
-import axios from "axios";
 
 import dotenv from "dotenv";
 dotenv.config();
@@ -22,6 +23,15 @@ function render(st) {
 }
 
 render();
+
+function addEventListeners (st) {
+  // add event listeners to Nav items for navigation
+  document.querySelectorAll("nav a").forEach(navLink =>
+    navLink.addEventListener("click", event => {
+      event.preventDefault();
+      render(state[event.target.title]);
+    })
+  );
 
 function addEventListeners(st) {
   // add menu toggle to bars icon in nav bar
