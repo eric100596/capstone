@@ -23,8 +23,6 @@ function render(st) {
   addEventListeners(st);
 }
 
-render();
-
 function addEventListeners(st) {
   // add menu toggle to bars icon in nav bar
   document
