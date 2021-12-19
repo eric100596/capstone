@@ -14,16 +14,16 @@ const router = new Navigo(window.location.origin);
 function render(st) {
   console.log(st);
   document.querySelector("#root").innerHTML = `
-    ${Header(st)}
-    ${Nav(state.Links)}
-    ${Main(st)}
-    ${Footer()}
+  ${Header(st)}
+  ${Nav(state.Links)}
+  ${Main(st)}
+  ${Footer()}
   `;
   router.updatePageLinks();
   addEventListeners(st);
 }
 
-function addEventListeners(st) {
+function addEventListeners() {
   // add menu toggle to bars icon in nav bar
   document
     .querySelector(".fa-bars")

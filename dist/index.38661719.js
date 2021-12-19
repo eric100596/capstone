@@ -474,15 +474,15 @@ const router = new _navigoDefault.default(window.location.origin);
 function render(st) {
     console.log(st);
     document.querySelector("#root").innerHTML = `
-    ${_components.Header(st)}
-    ${_components.Nav(_store.Links)}
-    ${_components.Main(st)}
-    ${_components.Footer()}
+  ${_components.Header(st)}
+  ${_components.Nav(_store.Links)}
+  ${_components.Main(st)}
+  ${_components.Footer()}
   `;
     router.updatePageLinks();
     addEventListeners(st);
 }
-function addEventListeners(st) {
+function addEventListeners() {
     // add menu toggle to bars icon in nav bar
     document.querySelector(".fa-bars").addEventListener("click", ()=>document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     );
