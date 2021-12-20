@@ -24,6 +24,14 @@ function render(st) {
 }
 
 function addEventListeners() {
+  // add event listeners to Nav items for navigation
+  document.querySelectorAll("nav a").forEach(navLink =>
+    navLink.addEventListener("click", event => {
+      event.preventDefault();
+      render(state[event.target.title]);
+    })
+  );
+
   // add menu toggle to bars icon in nav bar
   document
     .querySelector(".fa-bars")
@@ -39,7 +47,7 @@ function addEventListeners() {
 router.hooks({
   before: (done, params) => {
     const page =
-      params && params.hasOwnProperty("page")
+      params && params.hasOwnProperty("view")
         ? capitalize(params.page)
         : "Home";
 

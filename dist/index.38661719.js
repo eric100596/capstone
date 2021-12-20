@@ -483,6 +483,12 @@ function render(st) {
     addEventListeners(st);
 }
 function addEventListeners() {
+    // add event listeners to Nav items for navigation
+    document.querySelectorAll("nav a").forEach((navLink)=>navLink.addEventListener("click", (event)=>{
+            event.preventDefault();
+            render(_store[event.target.title]);
+        })
+    );
     // add menu toggle to bars icon in nav bar
     document.querySelector(".fa-bars").addEventListener("click", ()=>document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     );
@@ -492,7 +498,7 @@ function addEventListeners() {
 }
 router.hooks({
     before: (done, params)=>{
-        const page = params && params.hasOwnProperty("page") ? _lodash.capitalize(params.page) : "Home";
+        const page = params && params.hasOwnProperty("view") ? _lodash.capitalize(params.page) : "Home";
         if (page === "Home") _axiosDefault.default.get(`https://api.openweathermap.org/data/2.5/weather?appid=${"4ba87c51fd4489f8765bb849633789b9"}&q=st.%20louis`).then((response)=>{
             _store.Home.weather = {
             };
@@ -508,9 +514,9 @@ router.hooks({
 router.on({
     "/": ()=>render(_store.Home)
     ,
-    ":page": (params)=>{
-        let page = _lodash.capitalize(params.page);
-        render(_store[page]);
+    ":view": (params)=>{
+        let view = _lodash.capitalize(params.view);
+        render(_store[view]);
     }
 }).resolve();
 
