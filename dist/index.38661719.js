@@ -482,8 +482,7 @@ function render(st) {
     router.updatePageLinks();
     addEventListeners(st);
 }
-function addEventListeners() {
-    // add event listeners to Nav items for navigation
+function addEventListeners(st) {
     document.querySelectorAll("nav a").forEach((navLink)=>navLink.addEventListener("click", (event)=>{
             event.preventDefault();
             render(_store[event.target.title]);
@@ -498,7 +497,7 @@ function addEventListeners() {
 }
 router.hooks({
     before: (done, params)=>{
-        const page = params && params.hasOwnProperty("view") ? _lodash.capitalize(params.page) : "Home";
+        const page = params && params.hasOwnProperty("page") ? _lodash.capitalize(params.page) : "Home";
         if (page === "Home") _axiosDefault.default.get(`https://api.openweathermap.org/data/2.5/weather?appid=${"4ba87c51fd4489f8765bb849633789b9"}&q=st.%20louis`).then((response)=>{
             _store.Home.weather = {
             };

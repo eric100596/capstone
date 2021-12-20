@@ -23,8 +23,7 @@ function render(st) {
   addEventListeners(st);
 }
 
-function addEventListeners() {
-  // add event listeners to Nav items for navigation
+function addEventListeners(st) {
   document.querySelectorAll("nav a").forEach(navLink =>
     navLink.addEventListener("click", event => {
       event.preventDefault();
@@ -47,7 +46,7 @@ function addEventListeners() {
 router.hooks({
   before: (done, params) => {
     const page =
-      params && params.hasOwnProperty("view")
+      params && params.hasOwnProperty("page")
         ? capitalize(params.page)
         : "Home";
 
