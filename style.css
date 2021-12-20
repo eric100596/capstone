@@ -3,22 +3,23 @@ html {
 }
 
 #pic1 > img {
-  max-height: 200px;
+  max-height: 150px;
 }
 
 #pic2 > img {
-  max-height: 200px;
-  display: flex;
-  flex-wrap: wrap;
-
+  max-height: 150px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
   }
 
-h1 {
+#title > h1 {
   font-family: cursive, 'Times New Roman', Times, serif;
-  font-size: 100px;
-  text-align: center;
+  font-size: 50px;
   color: white;
-  vertical-align: 100px;
+  position: absolute;
+  top: -3px;
+  left: 100px;
 }
 
 h4 {

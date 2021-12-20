@@ -548,16 +548,19 @@ var _dbl7LogoPng = require("../assets/Dbl7Logo.png");
 var _dbl7LogoPngDefault = parcelHelpers.interopDefault(_dbl7LogoPng);
 exports.default = ()=>_htmlLiteralDefault.default`
   <header>
-    <div style="position: relative; top: 130px" ;>
-      <section id="pic1" height="200" width="auto">
+    <div>
+      <section id="pic1">
         <img src="${_dbl7LogoPngDefault.default}" />
       </section>
-
-      <h1>DOUBLE-7</h1>
     </div>
-    <div style="position: relative; top: 40px" ;>
-      <h4>A religious "dominoes-style" card game for all ages!</h4>
+    <div>
+      <section id="title">
+        <h1>DOUBLE-7</h1>
+        <h4>A religious "dominoes-style" card game for all ages!</h4>
+      </section>
+    </div>
 
+    <div>
       <section id="pic2">
         <img src="${_dbl7LogoPngDefault.default}" />
       </section>
