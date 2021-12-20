@@ -9,7 +9,7 @@ import { capitalize } from "lodash";
 import dotenv from "dotenv";
 dotenv.config();
 
-const router = new Navigo(window.location.origin);
+const router = new Navigo("/");
 
 function render(st) {
   console.log(st);

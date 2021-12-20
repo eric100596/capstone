@@ -2,12 +2,14 @@ html {
   background-color: black;
 }
 
-.pic1 {
-
+#pic1 > img {
+  border: 1px solid red;
+  max-height: 100px;
 }
 
-.pic2 {
-
+#pic2 > img {
+  border: 1px solid red;
+  max-height: 100px;
   }
 
 h1 {
