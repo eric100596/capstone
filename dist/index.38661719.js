@@ -870,7 +870,7 @@ const kelvinToFahrenheit = (kelvinTemp)=>Math.round((kelvinTemp - 273.15) * 1.8 
 exports.default = (st)=>_htmlLiteralDefault.default`
   <section id="Home">
     <h3>
-      Temperature in ${st.weather.temp} is
+      Temperature in ${st.weather.city} is
       ${kelvinToFahrenheit(st.weather.temp)}F. It feels like
       ${kelvinToFahrenheit(st.weather.temp)}F.
     </h3>

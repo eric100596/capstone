@@ -7,7 +7,7 @@ const kelvinToFahrenheit = kelvinTemp =>
 export default (st) => html`
   <section id="Home">
     <h3>
-      Temperature in ${st.weather.temp} is
+      Temperature in ${st.weather.city} is
       ${kelvinToFahrenheit(st.weather.temp)}F. It feels like
       ${kelvinToFahrenheit(st.weather.temp)}F.
     </h3>
