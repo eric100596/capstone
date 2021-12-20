@@ -3,13 +3,14 @@ html {
 }
 
 #pic1 > img {
-  border: 1px solid red;
-  max-height: 100px;
+  max-height: 200px;
 }
 
 #pic2 > img {
-  border: 1px solid red;
-  max-height: 100px;
+  max-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+
   }
 
 h1 {
