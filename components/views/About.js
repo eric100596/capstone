@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default () => html`
-  <section>
+  <div id="about">
     <h3>About This Game</h3>
     <p>
       This game is played like dominoes, but there is a twist! This deck has 36
@@ -12,5 +12,5 @@ export default () => html`
       versions of game designed to bring generations of families together, while
       at the same time teaching foundational religious content.
     </p>
-  </section>
+  </div>
 `;

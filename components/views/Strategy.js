@@ -1,10 +1,8 @@
 import html from "html-literal";
 
 export default () => html`
-  <section>
+<div id="strategy">
     <h3>Strategy</h3>
-    <br />
-    <p>
       The object of the game is to be the first player to reach 150 points. So,
       the order in which cards are played matters. For example, to begin the
       game the “7-7” card must be played (unless it is in the Boneyard). Since
@@ -25,5 +23,5 @@ export default () => html`
       if it is the only play a player has, or if the play will result in the
       numbers on the ends of the cards equaling a multiple of 5.
     </p>
-  </section>
+    </div>
 `;
