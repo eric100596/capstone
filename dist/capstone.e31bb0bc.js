@@ -161,8 +161,7 @@ var Flatted = function (Primitive, primitive) {
       }, '', value)), replace = function (key, value) {
         if (firstRun) {
           firstRun = !firstRun;
-          return value; // this was invoking twice each root object
-          // return i < 1 ? value : $.call(this, key, value);
+          return value;
         }
 
         var after = $.call(this, key, value);
@@ -22707,7 +22706,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63480" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51784" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
