@@ -38,11 +38,6 @@ function addEventListeners(st) {
       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     );
 
-  // handle form submission with PrintFormOnSubmit module
-  // const form = document.querySelector("form");
-  // PrintFormOnSubmit(form);
-}
-
 router.hooks({
   before: (done, params) => {
     const page =
