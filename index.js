@@ -64,11 +64,11 @@ router.hooks({
 });
 
 router
-  .on({
-    "/": () => render(state.Home),
-    ":view": params => {
-      let view = capitalize(params.view);
-      render(state[view]);
-    }
-  })
-  .resolve();
+.on({
+  "/": () => render(state.Home),
+  ":view": params => {
+    let view = capitalize(params.view);
+    render(state[view]);
+  }
+})
+.resolve();
