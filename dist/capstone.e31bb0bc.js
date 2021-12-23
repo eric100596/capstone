@@ -22646,9 +22646,7 @@ function addEventListeners(st) {
 
   document.querySelector(".fa-bars").addEventListener("click", function () {
     return document.querySelector("nav > ul").classList.toggle("hidden--mobile");
-  }); // handle form submission with PrintFormOnSubmit module
-  // const form = document.querySelector("form");
-  // PrintFormOnSubmit(form);
+  });
 }
 
 router.hooks({
@@ -22706,7 +22704,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57233" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51084" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

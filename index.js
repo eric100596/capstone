@@ -37,7 +37,7 @@ function addEventListeners(st) {
     .addEventListener("click", () =>
       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     );
-
+}
 router.hooks({
   before: (done, params) => {
     const page =
@@ -64,11 +64,11 @@ router.hooks({
 });
 
 router
-.on({
-  "/": () => render(state.Home),
-  ":view": params => {
-    let view = capitalize(params.view);
-    render(state[view]);
-  }
-})
-.resolve();
+  .on({
+    "/": () => render(state.Home),
+    ":view": params => {
+      let view = capitalize(params.view);
+      render(state[view]);
+    }
+  })
+  .resolve();

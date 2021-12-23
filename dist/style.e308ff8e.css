@@ -110,19 +110,17 @@ a {
   justify-content: space-evenly;
 }
 
-@media (min-width: 550px) {
+/* @media (min-width: 550px) {
   nav > .fa-bars {
     display: none;
     color: white;
   }
-}
+} */
 
-/* in HTML: <ul class="hidden--mobile"> */
-@media (max-width: 550px) {
-.hidden--mobile {
-  display: none;
-}
-}
+@media (max-width: 549px) {
+  .hidden--mobile {
+    display: none;
+  }
 
 .site1 {
 
