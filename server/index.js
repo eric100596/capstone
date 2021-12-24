@@ -32,7 +32,7 @@ app.get("/status", (request, response) => {
   // Create the response body
   // End and return the response
   response.send(
-    JSON.stringify({ message: "Service healthy and THIS IS BEST!" })
+    JSON.stringify({ message: "Service healthy and ERIC IS BEST!" })
   );
 });
 
