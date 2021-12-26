@@ -15,7 +15,10 @@ export default (st) => html`
       <p>GAME SPACE</p>
     </div>
 
-    <div class="box"></div>
+    <div class="box">
+      let btn = document.createElement("button"); btn.innerHTML = "Start Game";
+      document.body.appendChild(btn);
+    </div>
     <br />
     <br />
     <br />

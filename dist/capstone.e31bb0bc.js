@@ -388,7 +388,7 @@ var kelvinToFahrenheit = function kelvinToFahrenheit(kelvinTemp) {
 
 
 var _default = function _default(st) {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section id=\"Home\">\n    <h3>\n      Temperature in ", " is\n      ", "F. It feels like\n      ", "F.\n    </h3>\n    <div class=\"boxtop\">\n      <p>GAME SPACE</p>\n    </div>\n\n    <div class=\"box\"></div>\n    <br />\n    <br />\n    <br />\n  </section>\n"])), st.weather.city, kelvinToFahrenheit(st.weather.temp), kelvinToFahrenheit(st.weather.temp));
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section id=\"Home\">\n    <h3>\n      Temperature in ", " is\n      ", "F. It feels like\n      ", "F.\n    </h3>\n    <div class=\"boxtop\">\n      <p>GAME SPACE</p>\n    </div>\n\n    <div class=\"box\">\n      let btn = document.createElement(\"button\"); btn.innerHTML = \"Start Game\";\n      document.body.appendChild(btn);\n    </div>\n    <br />\n    <br />\n    <br />\n  </section>\n"])), st.weather.city, kelvinToFahrenheit(st.weather.temp), kelvinToFahrenheit(st.weather.temp));
 };
 
 exports.default = _default;
@@ -22704,7 +22704,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56077" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59161" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

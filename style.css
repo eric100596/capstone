@@ -122,9 +122,10 @@ a {
 @media (max-width: 549px) {
   .hidden--mobile {
     display: none;
+    color: white;
   }
 
-  #root > nav > i {
+#root > nav > i {
     border-color: red;
   }
 
@@ -142,7 +143,9 @@ a:hover {
   color: black;
 }
 
-
+#boxtop > btn {
+  color: white;
+}
 
 
 
