@@ -339,7 +339,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var _default = function _default() {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <header>\n    <div>\n      <section id=\"pic1\">\n        <img src=\"", "\" />\n      </section>\n    </div>\n    <div>\n      <section id=\"title\">\n        <h1>DOUBLE-7</h1>\n        <h4>A religious \"dominoes-style\" card game for all ages!</h4>\n      </section>\n    </div>\n\n    <div>\n      <section id=\"pic2\">\n        <img src=\"", "\" />\n      </section>\n    </div>\n\n    <br />\n  </header>\n"])), _Dbl7Logo.default, _Dbl7Logo.default);
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <header>\n    <div class=\"title-bar\">\n      <img src=\"", "\" />\n      <section id=\"title\">\n        <h1>DOUBLE-7</h1>\n        <h4>A religious \"dominoes-style\" card game for all ages!</h4>\n      </section>\n\n      <img src=\"", "\" />\n    </div>\n    <br />\n  </header>\n"])), _Dbl7Logo.default, _Dbl7Logo.default);
 };
 
 exports.default = _default;
@@ -360,7 +360,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var _default = function _default(links) {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <nav>\n    <i class=\"fas fa-bars\"></i>\n    <ul class=\"hidden--mobile nav-links\">\n      ", "\n    </ul>\n  </nav>\n"])), links.map(function (el) {
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <nav>\n    <i class=\"fas fa-bars fa-2x\"></i>\n    <ul class=\"hidden--mobile nav-links\">\n      ", "\n    </ul>\n  </nav>\n"])), links.map(function (el) {
     return "<li><a href=\"/".concat(el.title, "\" title=\"").concat(el.title, "\" data-navigo>").concat(el.text, "</a></li>");
   }));
 };
@@ -388,7 +388,7 @@ var kelvinToFahrenheit = function kelvinToFahrenheit(kelvinTemp) {
 
 
 var _default = function _default(st) {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section id=\"Home\">\n    <h3>\n      Temperature in ", " is\n      ", "F. It feels like\n      ", "F.\n    </h3>\n    <div class=\"boxtop\">\n      <p>GAME SPACE</p>\n    </div>\n\n    <div class=\"box\">\n      let btn = document.createElement(\"button\"); btn.innerHTML = \"Start Game\";\n      document.body.appendChild(btn);\n    </div>\n    <br />\n    <br />\n    <br />\n  </section>\n"])), st.weather.city, kelvinToFahrenheit(st.weather.temp), kelvinToFahrenheit(st.weather.temp));
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section id=\"Home\">\n    <h3>\n      Temperature in ", " is\n      ", "F. It feels like\n      ", "F.\n    </h3>\n    <div class=\"boxtop\">\n      <p>GAME SPACE</p>\n    </div>\n\n    <div class=\"box\">\n      let btn = document.createElement(\"button\"); btn.innerHTML = \"Start Game\";\n      document.body.appendChild(btn);\n    </div>\n    <button>\n      New Game\n    </button>\n    <br />\n    <br />\n    <br />\n  </section>\n"])), st.weather.city, kelvinToFahrenheit(st.weather.temp), kelvinToFahrenheit(st.weather.temp));
 };
 
 exports.default = _default;
@@ -22704,7 +22704,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59161" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65306" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

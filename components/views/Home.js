@@ -19,6 +19,9 @@ export default (st) => html`
       let btn = document.createElement("button"); btn.innerHTML = "Start Game";
       document.body.appendChild(btn);
     </div>
+    <button>
+      New Game
+    </button>
     <br />
     <br />
     <br />
