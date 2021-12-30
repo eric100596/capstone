@@ -98,7 +98,7 @@ router.hooks({
       axios
         .get(`${process.env.YOUR_GAME_API_URL}`)
         .then(response => {
-          state.Game.games.push(response.data);
+          state.Game.games = response.data;
           router.navigate("/Game");
           done();
         })
