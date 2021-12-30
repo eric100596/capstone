@@ -4,7 +4,7 @@ const gameSchema = new mongoose.Schema({
   playerName: String,
   gameNumber: String,
   gameStatus: String,
-  score: String
+  score: Number
 });
 
 const Game = mongoose.model("Game", gameSchema);
