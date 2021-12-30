@@ -31,6 +31,16 @@ export default () => html`
         <option value="lost">I lost!</option>
       </select>
     </div>
+    <div>
+      <label for="score">Score:</label>
+      <input
+        type="text"
+        name="score"
+        id="score"
+        placeholder="Enter your score"
+        required
+      />
+    </div>
     <input type="hidden" name="playerName" id="playerName" value="<Eric B>" />
     <input type="submit" name="submit" value="Submit Game" />
   </form>
