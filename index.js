@@ -38,6 +38,38 @@ function addEventListeners(st) {
       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     );
 }
+
+console.log(st.view);
+  if (st.view === "Current") {
+    document.querySelector("form").addEventListener("submit", event => {
+      event.preventDefault();
+
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
+      }
+
+      const requestData = {
+        playerName: inputList.playerName.value,
+        gameNumber: inputList.gameNumber.value,
+        gameStatus: inputList.gameStatus.value,
+        score: inputList.score.value
+      };
+      console.log("request Body", requestData);
+
+      axios
+        .post(`${process.env.YOUR_GAME_API_URL}`, requestData)
+        .then(response => {
+          // Push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
+          state.Game.games.push(response.data);
+          router.navigate("/Game");
+        })
+        .catch(error => {
+          console.log("It puked", error);
+        });
+    });
+  }
+}
+
 router.hooks({
   before: (done, params) => {
     const page =
