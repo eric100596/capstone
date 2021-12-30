@@ -476,7 +476,43 @@ var _default = function _default() {
 };
 
 exports.default = _default;
-},{"html-literal":"node_modules/html-literal/build/src/index.js"}],"components/views/index.js":[function(require,module,exports) {
+},{"html-literal":"node_modules/html-literal/build/src/index.js"}],"components/views/Current.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _htmlLiteral = _interopRequireDefault(require("html-literal"));
+
+var _templateObject;
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var _default = function _default() {
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <form id=\"current\" method=\"POST\" action=\"\">\n    <h2>Play a game!</h2>\n    <div>\n      <label for=\"playerName\">Your name:</label>\n      <input\n        type=\"text\"\n        name=\"name\"\n        id=\"name\"\n        placeholder=\"Enter Your Name\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameNumber\">Game number:</label>\n      <input\n        type=\"text\"\n        name=\"gameNumber\"\n        id=\"gameNumber\"\n        placeholder=\"Enter Game Number\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameStatus\">Game Status:</label>\n      <select id=\"gameStatus\" name=\"gameStatus\">\n        <option value=\"\">Did you win?</option>\n        <option value=\"win\">I won!</option>\n        <option value=\"lost\">I lost!</option>\n      </select>\n    </div>\n    <div>\n      <label for=\"score\">Score:</label>\n      <input\n        type=\"text\"\n        name=\"score\"\n        id=\"score\"\n        placeholder=\"Enter your score\"\n        required\n      />\n    </div>\n    <input type=\"hidden\" name=\"playerName\" id=\"playerName\" value=\"<Eric B>\" />\n    <input type=\"submit\" name=\"submit\" value=\"Submit Game\" />\n  </form>\n"])));
+};
+
+exports.default = _default;
+},{"html-literal":"node_modules/html-literal/build/src/index.js"}],"components/views/Game.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default(st) {
+  return "\n<table id=\"games\">\n<tr><th>PlayerName</th><th>GameNumber</th><th>GameStatus</th><th>Score</th></tr>\n".concat(st.games.map(function (game) {
+    return "<tr><td>".concat(game.playerName, "</td><td>").concat(game.gameNumber, "</td><td>").concat(game.Status, "<td>").concat(game.score, "</td></tr>");
+  }).join(""), "\n</table>\n");
+};
+
+exports.default = _default;
+},{}],"components/views/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -492,6 +528,18 @@ Object.defineProperty(exports, "Contact", {
   enumerable: true,
   get: function () {
     return _Contact.default;
+  }
+});
+Object.defineProperty(exports, "Current", {
+  enumerable: true,
+  get: function () {
+    return _Current.default;
+  }
+});
+Object.defineProperty(exports, "Game", {
+  enumerable: true,
+  get: function () {
+    return _Game.default;
   }
 });
 Object.defineProperty(exports, "Home", {
@@ -523,8 +571,12 @@ var _Strategy = _interopRequireDefault(require("./Strategy"));
 
 var _Contact = _interopRequireDefault(require("./Contact"));
 
+var _Current = _interopRequireDefault(require("./Current"));
+
+var _Game = _interopRequireDefault(require("./Game"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Home":"components/views/Home.js","./Instructions":"components/views/Instructions.js","./About":"components/views/About.js","./Strategy":"components/views/Strategy.js","./Contact":"components/views/Contact.js"}],"components/Main.js":[function(require,module,exports) {
+},{"./Home":"components/views/Home.js","./Instructions":"components/views/Instructions.js","./About":"components/views/About.js","./Strategy":"components/views/Strategy.js","./Contact":"components/views/Contact.js","./Current":"components/views/Current.js","./Game":"components/views/Game.js"}],"components/Main.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -696,7 +748,38 @@ var _default = [{
 }, {
   title: "Contact",
   text: "Contact"
+}, {
+  title: "Current",
+  text: "Play a game!"
+}, {
+  title: "Game",
+  text: "List of games"
 }];
+exports.default = _default;
+},{}],"store/Current.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  header: "Play a game!",
+  view: "Current"
+};
+exports.default = _default;
+},{}],"store/Game.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  header: "List of Games",
+  view: "Game",
+  games: []
+};
 exports.default = _default;
 },{}],"store/index.js":[function(require,module,exports) {
 "use strict";
@@ -714,6 +797,18 @@ Object.defineProperty(exports, "Contact", {
   enumerable: true,
   get: function () {
     return _Contact.default;
+  }
+});
+Object.defineProperty(exports, "Current", {
+  enumerable: true,
+  get: function () {
+    return _Current.default;
+  }
+});
+Object.defineProperty(exports, "Game", {
+  enumerable: true,
+  get: function () {
+    return _Game.default;
   }
 });
 Object.defineProperty(exports, "Home", {
@@ -753,8 +848,12 @@ var _Contact = _interopRequireDefault(require("./Contact"));
 
 var _Links = _interopRequireDefault(require("./Links"));
 
+var _Current = _interopRequireDefault(require("./Current"));
+
+var _Game = _interopRequireDefault(require("./Game"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Home":"store/Home.js","./Instructions":"store/Instructions.js","./About":"store/About.js","./Strategy":"store/Strategy.js","./Contact":"store/Contact.js","./Links":"store/Links.js"}],"node_modules/axios/lib/helpers/bind.js":[function(require,module,exports) {
+},{"./Home":"store/Home.js","./Instructions":"store/Instructions.js","./About":"store/About.js","./Strategy":"store/Strategy.js","./Contact":"store/Contact.js","./Links":"store/Links.js","./Current":"store/Current.js","./Game":"store/Game.js"}],"node_modules/axios/lib/helpers/bind.js":[function(require,module,exports) {
 'use strict';
 
 module.exports = function bind(fn, thisArg) {
@@ -22647,10 +22746,36 @@ function addEventListeners(st) {
   document.querySelector(".fa-bars").addEventListener("click", function () {
     return document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
+  console.log(st.view);
+
+  if (st.view === "Current") {
+    document.querySelector("form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      var inputList = event.target.elements;
+      console.log("Input Element List", inputList);
+      var requestData = {
+        playerName: inputList.playerName.value,
+        gameNumber: inputList.gameNumber.value,
+        gameStatus: inputList.gameStatus.value,
+        score: inputList.score.value
+      };
+      console.log("request Body", requestData);
+
+      _axios.default.post("".concat("https://currentdouble7game.herokuapp.com/games"), requestData).then(function (response) {
+        // Push the new pizza onto the Pizza state pizzas attribute, so it can be displayed in the pizza list
+        state.Game.games.push(response.data);
+        router.navigate("/Game");
+      }).catch(function (error) {
+        console.log("It puked", error);
+      });
+    });
+  }
 }
 
 router.hooks({
   before: function before(done, params) {
+    console.log("router hooks before it fired");
+    console.log(params.page);
     var page = params && params.hasOwnProperty("page") ? (0, _lodash.capitalize)(params.page) : "Home";
 
     if (page === "Home") {
@@ -22665,14 +22790,28 @@ router.hooks({
         return console.log(err);
       });
     }
+
+    console.log(page);
+
+    if (page === "Game") {
+      console.log("game page loaded");
+
+      _axios.default.get("".concat("https://currentdouble7game.herokuapp.com/games")).then(function (response) {
+        state.Game.games.push(response.data);
+        router.navigate("/Game");
+        done();
+      }).catch(function (error) {
+        console.log("It puked", error);
+      });
+    }
   }
 });
 router.on({
   "/": function _() {
     return render(state.Home);
   },
-  ":view": function view(params) {
-    var view = (0, _lodash.capitalize)(params.view);
+  ":page": function page(params) {
+    var view = (0, _lodash.capitalize)(params.page);
     render(state[view]);
   }
 }).resolve();
@@ -22704,7 +22843,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65306" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63404" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

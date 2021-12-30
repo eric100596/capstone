@@ -70,6 +70,8 @@ function addEventListeners(st) {
 
 router.hooks({
   before: (done, params) => {
+    console.log("router hooks before it fired");
+    console.log(params.page);
     const page =
       params && params.hasOwnProperty("page")
         ? capitalize(params.page)
@@ -90,14 +92,28 @@ router.hooks({
         })
         .catch(err => console.log(err));
     }
+    console.log(page);
+    if (page === "Game") {
+      console.log("game page loaded");
+      axios
+        .get(`${process.env.YOUR_GAME_API_URL}`)
+        .then(response => {
+          state.Game.games.push(response.data);
+          router.navigate("/Game");
+          done();
+        })
+        .catch(error => {
+          console.log("It puked", error);
+        });
+    }
   }
 });
 
 router
   .on({
     "/": () => render(state.Home),
-    ":view": params => {
-      let view = capitalize(params.view);
+    ":page": params => {
+      let view = capitalize(params.page);
       render(state[view]);
     }
   })
