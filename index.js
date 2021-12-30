@@ -37,16 +37,14 @@ function addEventListeners(st) {
     .addEventListener("click", () =>
       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     );
-}
 
-console.log(st.view);
+  console.log(st.view);
   if (st.view === "Current") {
     document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
 
       const inputList = event.target.elements;
       console.log("Input Element List", inputList);
-      }
 
       const requestData = {
         playerName: inputList.playerName.value,

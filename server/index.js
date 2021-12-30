@@ -5,7 +5,7 @@ const express = require("express");
 
 const mongoose = require("mongoose");
 
-const pizzas = require("./routers/pizzas");
+const games = require("./routers/games");
 
 const app = express();
 
