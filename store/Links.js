@@ -5,5 +5,5 @@ export default [
   { title: "Strategy", text: "Strategy" },
   { title: "Contact", text: "Contact" },
   { title: "Current", text: "Play a game!" },
-  { title: "Game", text: "List of games" }
+  { title: "Game", text: "Game History" }
 ];
