@@ -1,24 +1,11 @@
 const dotenv = require("dotenv");
-// 'Import' the Express module instead of http
 const express = require("express");
-// Initialize the Express application
-
 const mongoose = require("mongoose");
-
 const games = require("./routers/games");
-
-const app = express();
 
 dotenv.config();
 
-mongoose.connect(process.env.MONGODB);
-const db = mongoose.connection;
-
-db.on("error", console.error.bind(console, "connection error:"));
-db.once(
-  "open",
-  console.log.bind(console, "Successfully opened connection to Mongo!")
-);
+const app = express();
 
 const logging = (request, response, next) => {
   console.log(`${request.method} ${request.url} ${Date.now()}`);
@@ -44,7 +31,14 @@ app.use(cors);
 app.use(express.json());
 app.use(logging);
 
-app.use("/games", games);
+mongoose.connect(process.env.MONGODB);
+const db = mongoose.connection;
+
+db.on("error", console.error.bind(console, "connection error:"));
+db.once(
+  "open",
+  console.log.bind(console, "Successfully opened connection to Mongo!")
+);
 
 // Handle the request with HTTP GET method from http://localhost:4040/status
 app.get("/status", (request, response) => {
@@ -54,8 +48,17 @@ app.get("/status", (request, response) => {
   response.send(JSON.stringify({ message: "Service healthy" }));
 });
 
+app
+  .route("/Current")
+
+  .post((request, response) => {
+    response.json(request);
+  });
+
+app.use("/games", games);
+
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040
-app.listen(process.env.PORT, () =>
+app.listen(process.env.PORT || 4040, () =>
   console.log(`Listening on port ${process.env.PORT}`)
 );

@@ -16,7 +16,7 @@ export default (st) => html`
     </div>
 
     <div class="box"></div>
-    <div class="btn">
+    <div class="buttonBar">
       <button>
         New Game
       </button>

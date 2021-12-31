@@ -5,12 +5,16 @@ html {
 .title-bar {
   display: flex;
   flex-flow: row;
+  justify-content: center;
 }
 
 .title-bar > img {
   max-height: 175px;
-  margin-left: 50px;
+  margin: 50px;
   width: auto;
+}
+#title {
+line-height: 50px;
 }
 
 #title > h1 {
@@ -21,12 +25,25 @@ html {
   ;
 }
 
-h4, tr {
+#title > h2 {
   font-family: Georgia, 'Times New Roman', Times, serif, 'Times New Roman', Times, serif;
   font-size: 16px;
   text-align: center;
   color: white;
-  margin-top: -90px;
+}
+
+#games > tbody > tr > th {
+  font-family: Georgia, 'Times New Roman', Times, serif, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+#games > tbody > tr > td {
+  font-family: Georgia, 'Times New Roman', Times, serif, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
 }
 
 #Home > div.boxtop > p {
@@ -108,12 +125,12 @@ a {
   justify-content: space-evenly;
 }
 
-/* @media (min-width: 550px) {
+@media (min-width: 550px) {
   nav > .fa-bars {
     display: none;
     color: white;
   }
-} */
+}
 
 @media (max-width: 549px) {
   .hidden--mobile {
@@ -145,10 +162,9 @@ a:hover {
   color: white;
 }
 
-#btn {
+.buttonBar {
   display: flex;
-  justify-content: right;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 

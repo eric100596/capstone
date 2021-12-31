@@ -10,6 +10,6 @@ const gameSchema = new mongoose.Schema({
 const Game = mongoose.model("Game", gameSchema);
 
 module.exports = {
-  schema: gameSchema,
-  model: Game
+  model: Game,
+  schema: gameSchema
 };
