@@ -493,7 +493,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var _default = function _default() {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <form id=\"current\" method=\"POST\" action=\"\">\n    <h2>Play a game!</h2>\n    <div>\n      <label for=\"playerName\">Your name:</label>\n      <input\n        type=\"text\"\n        name=\"name\"\n        id=\"name\"\n        placeholder=\"Enter Your Name\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameNumber\">Game number:</label>\n      <input\n        type=\"text\"\n        name=\"gameNumber\"\n        id=\"gameNumber\"\n        placeholder=\"Enter Game Number\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameStatus\">Game Status:</label>\n      <select id=\"gameStatus\" name=\"gameStatus\">\n        <option value=\"\">Did you win?</option>\n        <option value=\"win\">I won!</option>\n        <option value=\"lost\">I lost!</option>\n      </select>\n    </div>\n    <div>\n      <label for=\"score\">Score:</label>\n      <input\n        type=\"text\"\n        name=\"score\"\n        id=\"score\"\n        placeholder=\"Enter your score\"\n        required\n      />\n    </div>\n    <input\n      type=\"hidden\"\n      name=\"playerName\"\n      id=\"playerName\"\n      value=\"<Change This!>\"\n    />\n    <input type=\"submit\" name=\"submit\" value=\"Submit Game\" />\n  </form>\n"])));
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <form id=\"current\" method=\"POST\" action=\"\">\n    <h2>Play a game!</h2>\n    <div>\n      <label for=\"playerName\">Your name:</label>\n      <input\n        type=\"text\"\n        name=\"name\"\n        id=\"name\"\n        placeholder=\"Enter Your Name\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameNumber\">Game number:</label>\n      <input\n        type=\"text\"\n        name=\"gameNumber\"\n        id=\"gameNumber\"\n        placeholder=\"Enter Game Number\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameStatus\">Game status:</label>\n      <select id=\"gameStatus\" name=\"gameStatus\">\n        <option value=\"\">Did you win?</option>\n        <option value=\"win\">I won!</option>\n        <option value=\"lost\">I lost!</option>\n      </select>\n    </div>\n    <div>\n      <label for=\"score\">Score:</label>\n      <input\n        type=\"text\"\n        name=\"score\"\n        id=\"score\"\n        placeholder=\"Enter your score\"\n        required\n      />\n    </div>\n    <input type=\"submit\" name=\"submit\" value=\"Submit\" />\n  </form>\n"])));
 };
 
 exports.default = _default;
@@ -22796,8 +22796,9 @@ router.hooks({
       }).catch(function (err) {
         return console.log(err);
       });
-    } // console.log(page);
+    }
 
+    console.log(page);
 
     if (page === "Game") {
       _axios.default.get("".concat("https://currentdouble7game.herokuapp.com/games")).then(function (response) {
@@ -22847,7 +22848,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63120" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52550" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

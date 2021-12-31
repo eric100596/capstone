@@ -24,7 +24,7 @@ export default () => html`
       />
     </div>
     <div>
-      <label for="gameStatus">Game Status:</label>
+      <label for="gameStatus">Game status:</label>
       <select id="gameStatus" name="gameStatus">
         <option value="">Did you win?</option>
         <option value="win">I won!</option>
@@ -41,12 +41,6 @@ export default () => html`
         required
       />
     </div>
-    <input
-      type="hidden"
-      name="playerName"
-      id="playerName"
-      value="<Change This!>"
-    />
-    <input type="submit" name="submit" value="Submit Game" />
+    <input type="submit" name="submit" value="Submit" />
   </form>
 `;

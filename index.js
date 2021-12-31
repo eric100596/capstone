@@ -92,7 +92,7 @@ router.hooks({
         })
         .catch(err => console.log(err));
     }
-    // console.log(page);
+    console.log(page);
     if (page === "Game") {
       axios
         .get(`${process.env.YOUR_GAME_API_URL}`)
