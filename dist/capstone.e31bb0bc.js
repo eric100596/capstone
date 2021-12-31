@@ -22794,11 +22794,8 @@ router.hooks({
     console.log(page);
 
     if (page === "Game") {
-      console.log("game page loaded");
-
       _axios.default.get("".concat("https://currentdouble7game.herokuapp.com/games")).then(function (response) {
-        state.Game.games.push(response.data);
-        router.navigate("/Game");
+        state.Game.games = response.data;
         done();
       }).catch(function (error) {
         console.log("It puked", error);
@@ -22843,7 +22840,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63404" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53909" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

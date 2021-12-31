@@ -94,12 +94,10 @@ router.hooks({
     }
     console.log(page);
     if (page === "Game") {
-      console.log("game page loaded");
       axios
         .get(`${process.env.YOUR_GAME_API_URL}`)
         .then(response => {
           state.Game.games = response.data;
-          router.navigate("/Game");
           done();
         })
         .catch(error => {
