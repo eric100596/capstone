@@ -2,7 +2,7 @@ import html from "html-literal";
 
 export default () => html`
   <form id="current" method="POST" action="">
-    <h2>Play a game!</h2>
+    <h2>Statistics</h2>
     <div>
       <label for="playerName">Your name:</label>
       <input

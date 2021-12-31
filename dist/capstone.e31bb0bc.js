@@ -388,7 +388,7 @@ var kelvinToFahrenheit = function kelvinToFahrenheit(kelvinTemp) {
 
 
 var _default = function _default(st) {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section id=\"Home\">\n    <h3>\n      Temperature in ", " is\n      ", "F. It feels like\n      ", "F.\n    </h3>\n    <div class=\"boxtop\">\n      <p>GAME SPACE</p>\n    </div>\n\n    <div class=\"box\">\n      let btn = document.createElement(\"button\"); btn.innerHTML = \"Start Game\";\n      document.body.appendChild(btn);\n    </div>\n    <button>\n      New Game\n    </button>\n    <br />\n    <br />\n    <br />\n  </section>\n"])), st.weather.city, kelvinToFahrenheit(st.weather.temp), kelvinToFahrenheit(st.weather.temp));
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section id=\"Home\">\n    <h3>\n      Temperature in ", " is\n      ", "F. It feels like\n      ", "F.\n    </h3>\n    <div class=\"boxtop\">\n      <p>GAME SPACE</p>\n    </div>\n\n    <div class=\"box\"></div>\n    <div class=\"btn\">\n      <button>\n        New Game\n      </button>\n      <button>\n        Number of Players\n      </button>\n      <button>\n        Shuffle & Deal\n      </button>\n    </div>\n  </section>\n"])), st.weather.city, kelvinToFahrenheit(st.weather.temp), kelvinToFahrenheit(st.weather.temp));
 };
 
 exports.default = _default;
@@ -472,7 +472,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var _default = function _default() {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section>\n    <div class=\"site1\">\n      <a href=\"http://www.know-ble.com\">Check out this website!</a>\n    </div>\n\n    <div>\n      <p class=\"p1\">Or, complete the form below</p>\n      <form action=\"https://formspree.io/f/mjvlbabl\" method=\"POST\">\n        <label for=\"name\">Name:</label>\n        <input\n          type=\"text\"\n          name=\"name\"\n          id=\"name\"\n          placeholder=\"Full Name\"\n          required\n        />\n\n        <label for=\"email\">Email:</label>\n        <input\n          type=\"email\"\n          name=\"email\"\n          id=\"email\"\n          placeholder=\"you@somewhere.com\"\n        />\n\n        <label for=\"phone\">Phone:</label>\n        <input type=\"tel\" name=\"phone\" id=\"phone\" />\n\n        <div>\n          <br />\n          <label for=\"msg\">Enter your message here:</label>\n          <br />\n          <textarea name=\"msg\" id=\"msg\" cols=\"30\" rows=\"10\"></textarea>\n          <br />\n          <input type=\"submit\" value=\"Submit\" />\n        </div>\n\n        <br />\n      </form>\n    </div>\n  </section>\n"])));
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section>\n    <div class=\"site1\">\n      <a href=\"http://www.know-ble.com\">Check out this website!</a>\n    </div>\n\n    <div>\n      <p class=\"p1\">And/Or, complete the form below</p>\n      <form action=\"https://formspree.io/f/mjvlbabl\" method=\"POST\">\n        <label for=\"name\">Name:</label>\n        <input\n          type=\"text\"\n          name=\"name\"\n          id=\"name\"\n          placeholder=\"Full Name\"\n          required\n        />\n\n        <label for=\"email\">Email:</label>\n        <input\n          type=\"email\"\n          name=\"email\"\n          id=\"email\"\n          placeholder=\"you@somewhere.com\"\n        />\n\n        <label for=\"phone\">Phone:</label>\n        <input type=\"tel\" name=\"phone\" id=\"phone\" />\n\n        <div>\n          <br />\n          <label for=\"msg\">Enter your message here:</label>\n          <br />\n          <textarea name=\"msg\" id=\"msg\" cols=\"30\" rows=\"10\"></textarea>\n          <br />\n          <input type=\"submit\" value=\"Submit\" />\n        </div>\n\n        <br />\n      </form>\n    </div>\n  </section>\n"])));
 };
 
 exports.default = _default;
@@ -493,7 +493,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var _default = function _default() {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <form id=\"current\" method=\"POST\" action=\"\">\n    <h2>Play a game!</h2>\n    <div>\n      <label for=\"playerName\">Your name:</label>\n      <input\n        type=\"text\"\n        name=\"name\"\n        id=\"name\"\n        placeholder=\"Enter Your Name\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameNumber\">Game number:</label>\n      <input\n        type=\"text\"\n        name=\"gameNumber\"\n        id=\"gameNumber\"\n        placeholder=\"Enter Game Number\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameStatus\">Game status:</label>\n      <select id=\"gameStatus\" name=\"gameStatus\">\n        <option value=\"\">Did you win?</option>\n        <option value=\"win\">I won!</option>\n        <option value=\"lost\">I lost!</option>\n      </select>\n    </div>\n    <div>\n      <label for=\"score\">Score:</label>\n      <input\n        type=\"text\"\n        name=\"score\"\n        id=\"score\"\n        placeholder=\"Enter your score\"\n        required\n      />\n    </div>\n    <input type=\"submit\" name=\"submit\" value=\"Submit\" />\n  </form>\n"])));
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <form id=\"current\" method=\"POST\" action=\"\">\n    <h2>Statistics</h2>\n    <div>\n      <label for=\"playerName\">Your name:</label>\n      <input\n        type=\"text\"\n        name=\"name\"\n        id=\"name\"\n        placeholder=\"Enter Your Name\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameNumber\">Game number:</label>\n      <input\n        type=\"text\"\n        name=\"gameNumber\"\n        id=\"gameNumber\"\n        placeholder=\"Enter Game Number\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameStatus\">Game status:</label>\n      <select id=\"gameStatus\" name=\"gameStatus\">\n        <option value=\"\">Did you win?</option>\n        <option value=\"win\">I won!</option>\n        <option value=\"lost\">I lost!</option>\n      </select>\n    </div>\n    <div>\n      <label for=\"score\">Score:</label>\n      <input\n        type=\"text\"\n        name=\"score\"\n        id=\"score\"\n        placeholder=\"Enter your score\"\n        required\n      />\n    </div>\n    <input type=\"submit\" name=\"submit\" value=\"Submit\" />\n  </form>\n"])));
 };
 
 exports.default = _default;
@@ -758,7 +758,7 @@ var _default = [{
   text: "Contact"
 }, {
   title: "Current",
-  text: "Play a game!"
+  text: "Statistics"
 }, {
   title: "Game",
   text: "Game history"
@@ -772,7 +772,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _default = {
-  header: "Play a game!",
+  header: "Statistics",
   view: "Current"
 };
 exports.default = _default;

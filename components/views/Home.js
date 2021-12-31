@@ -15,15 +15,17 @@ export default (st) => html`
       <p>GAME SPACE</p>
     </div>
 
-    <div class="box">
-      let btn = document.createElement("button"); btn.innerHTML = "Start Game";
-      document.body.appendChild(btn);
+    <div class="box"></div>
+    <div class="btn">
+      <button>
+        New Game
+      </button>
+      <button>
+        Number of Players
+      </button>
+      <button>
+        Shuffle & Deal
+      </button>
     </div>
-    <button>
-      New Game
-    </button>
-    <br />
-    <br />
-    <br />
   </section>
 `;

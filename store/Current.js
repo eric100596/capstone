@@ -1,4 +1,4 @@
 export default {
-  header: "Play a game!",
+  header: "Statistics",
   view: "Current"
 };

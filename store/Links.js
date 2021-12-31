@@ -4,6 +4,6 @@ export default [
   { title: "About", text: "About this game" },
   { title: "Strategy", text: "Strategy" },
   { title: "Contact", text: "Contact" },
-  { title: "Current", text: "Play a game!" },
+  { title: "Current", text: "Statistics" },
   { title: "Game", text: "Game history" }
 ];

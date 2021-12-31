@@ -7,7 +7,7 @@ export default () => html`
     </div>
 
     <div>
-      <p class="p1">Or, complete the form below</p>
+      <p class="p1">And/Or, complete the form below</p>
       <form action="https://formspree.io/f/mjvlbabl" method="POST">
         <label for="name">Name:</label>
         <input

@@ -21,7 +21,7 @@ html {
   ;
 }
 
-h4, td, th {
+h4, tr {
   font-family: Georgia, 'Times New Roman', Times, serif, 'Times New Roman', Times, serif;
   font-size: 16px;
   text-align: center;
@@ -43,7 +43,7 @@ form {
   text-align: center;
 }
 
-label, td {
+label {
   color: white;
 }
 
@@ -145,5 +145,8 @@ a:hover {
   color: white;
 }
 
-
-
+#btn {
+  display: flex;
+  justify-content: right;
+  justify-content: space-between;
+}
