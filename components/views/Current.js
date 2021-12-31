@@ -41,7 +41,12 @@ export default () => html`
         required
       />
     </div>
-    <input type="hidden" name="playerName" id="playerName" value="<Eric B>" />
+    <input
+      type="hidden"
+      name="playerName"
+      id="playerName"
+      value="<Change This!>"
+    />
     <input type="submit" name="submit" value="Submit Game" />
   </form>
 `;

@@ -1,5 +1,5 @@
 export default {
-  header: "Game History",
+  header: "Game history",
   view: "Game",
   games: []
 };

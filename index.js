@@ -12,7 +12,7 @@ dotenv.config();
 const router = new Navigo(window.location.origin);
 
 function render(st) {
-  console.log(st);
+  // console.log(st);
   document.querySelector("#root").innerHTML = `
   ${Header(st)}
   ${Nav(state.Links)}
@@ -38,7 +38,7 @@ function addEventListeners(st) {
       document.querySelector("nav > ul").classList.toggle("hidden--mobile")
     );
 
-  console.log(st.view);
+  // console.log(st.view);
   if (st.view === "Current") {
     document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
@@ -70,8 +70,8 @@ function addEventListeners(st) {
 
 router.hooks({
   before: (done, params) => {
-    console.log("router hooks before it fired");
-    console.log(params.page);
+    // console.log("router hooks before it fired");
+    // console.log(params.page);
     const page =
       params && params.hasOwnProperty("page")
         ? capitalize(params.page)
@@ -92,7 +92,7 @@ router.hooks({
         })
         .catch(err => console.log(err));
     }
-    console.log(page);
+    // console.log(page);
     if (page === "Game") {
       axios
         .get(`${process.env.YOUR_GAME_API_URL}`)
@@ -101,8 +101,9 @@ router.hooks({
           done();
         })
         .catch(error => {
-          console.log("It puked", error);
+          console.log("Not good", error);
         });
+      console.log(state.Game.games);
     }
   }
 });
@@ -110,9 +111,6 @@ router.hooks({
 router
   .on({
     "/": () => render(state.Home),
-    ":page": params => {
-      let view = capitalize(params.page);
-      render(state[view]);
-    }
+    ":page": params => render(state[capitalize(params.page)])
   })
   .resolve();

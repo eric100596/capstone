@@ -493,7 +493,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var _default = function _default() {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <form id=\"current\" method=\"POST\" action=\"\">\n    <h2>Play a game!</h2>\n    <div>\n      <label for=\"playerName\">Your name:</label>\n      <input\n        type=\"text\"\n        name=\"name\"\n        id=\"name\"\n        placeholder=\"Enter Your Name\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameNumber\">Game number:</label>\n      <input\n        type=\"text\"\n        name=\"gameNumber\"\n        id=\"gameNumber\"\n        placeholder=\"Enter Game Number\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameStatus\">Game Status:</label>\n      <select id=\"gameStatus\" name=\"gameStatus\">\n        <option value=\"\">Did you win?</option>\n        <option value=\"win\">I won!</option>\n        <option value=\"lost\">I lost!</option>\n      </select>\n    </div>\n    <div>\n      <label for=\"score\">Score:</label>\n      <input\n        type=\"text\"\n        name=\"score\"\n        id=\"score\"\n        placeholder=\"Enter your score\"\n        required\n      />\n    </div>\n    <input type=\"hidden\" name=\"playerName\" id=\"playerName\" value=\"<Eric B>\" />\n    <input type=\"submit\" name=\"submit\" value=\"Submit Game\" />\n  </form>\n"])));
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <form id=\"current\" method=\"POST\" action=\"\">\n    <h2>Play a game!</h2>\n    <div>\n      <label for=\"playerName\">Your name:</label>\n      <input\n        type=\"text\"\n        name=\"name\"\n        id=\"name\"\n        placeholder=\"Enter Your Name\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameNumber\">Game number:</label>\n      <input\n        type=\"text\"\n        name=\"gameNumber\"\n        id=\"gameNumber\"\n        placeholder=\"Enter Game Number\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameStatus\">Game Status:</label>\n      <select id=\"gameStatus\" name=\"gameStatus\">\n        <option value=\"\">Did you win?</option>\n        <option value=\"win\">I won!</option>\n        <option value=\"lost\">I lost!</option>\n      </select>\n    </div>\n    <div>\n      <label for=\"score\">Score:</label>\n      <input\n        type=\"text\"\n        name=\"score\"\n        id=\"score\"\n        placeholder=\"Enter your score\"\n        required\n      />\n    </div>\n    <input\n      type=\"hidden\"\n      name=\"playerName\"\n      id=\"playerName\"\n      value=\"<Change This!>\"\n    />\n    <input type=\"submit\" name=\"submit\" value=\"Submit Game\" />\n  </form>\n"])));
 };
 
 exports.default = _default;
@@ -505,14 +505,22 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+var _htmlLiteral = _interopRequireDefault(require("html-literal"));
+
+var _templateObject;
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
 var _default = function _default(st) {
-  return "\n<table id=\"games\">\n<tr><th>PlayerName</th><th>GameNumber</th><th>GameStatus</th><th>Score</th></tr>\n".concat(st.games.map(function (game) {
-    return "<tr><td>".concat(game.playerName, "</td><td>").concat(game.gameNumber, "</td><td>").concat(game.Status, "<td>").concat(game.score, "</td></tr>");
-  }).join(""), "\n</table>\n");
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <table id=\"games\">\n    <tr>\n      <th>PlayerName</th>\n      <th>GameNumber</th>\n      <th>GameStatus</th>\n      <th>Score</th>\n    </tr>\n    ", "\n  </table>\n"])), st.games.map(function (game) {
+    return "<tr><td>".concat(game.playerName, "</td><td>").concat(game.gameNumber, "</td><td>").concat(game.Status, "</td><td>").concat(game.score, "</td></tr>");
+  }).join(""));
 };
 
 exports.default = _default;
-},{}],"components/views/index.js":[function(require,module,exports) {
+},{"html-literal":"node_modules/html-literal/build/src/index.js"}],"components/views/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -753,7 +761,7 @@ var _default = [{
   text: "Play a game!"
 }, {
   title: "Game",
-  text: "List of games"
+  text: "Game history"
 }];
 exports.default = _default;
 },{}],"store/Current.js":[function(require,module,exports) {
@@ -776,7 +784,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _default = {
-  header: "List of Games",
+  header: "Game history",
   view: "Game",
   games: []
 };
@@ -22729,7 +22737,7 @@ _dotenv.default.config();
 var router = new _navigo.default(window.location.origin);
 
 function render(st) {
-  console.log(st);
+  // console.log(st);
   document.querySelector("#root").innerHTML = "\n  ".concat((0, _components.Header)(st), "\n  ").concat((0, _components.Nav)(state.Links), "\n  ").concat((0, _components.Main)(st), "\n  ").concat((0, _components.Footer)(), "\n  ");
   router.updatePageLinks();
   addEventListeners(st);
@@ -22745,8 +22753,7 @@ function addEventListeners(st) {
 
   document.querySelector(".fa-bars").addEventListener("click", function () {
     return document.querySelector("nav > ul").classList.toggle("hidden--mobile");
-  });
-  console.log(st.view);
+  }); // console.log(st.view);
 
   if (st.view === "Current") {
     document.querySelector("form").addEventListener("submit", function (event) {
@@ -22774,8 +22781,8 @@ function addEventListeners(st) {
 
 router.hooks({
   before: function before(done, params) {
-    console.log("router hooks before it fired");
-    console.log(params.page);
+    // console.log("router hooks before it fired");
+    // console.log(params.page);
     var page = params && params.hasOwnProperty("page") ? (0, _lodash.capitalize)(params.page) : "Home";
 
     if (page === "Home") {
@@ -22789,17 +22796,18 @@ router.hooks({
       }).catch(function (err) {
         return console.log(err);
       });
-    }
+    } // console.log(page);
 
-    console.log(page);
 
     if (page === "Game") {
       _axios.default.get("".concat("https://currentdouble7game.herokuapp.com/games")).then(function (response) {
         state.Game.games = response.data;
         done();
       }).catch(function (error) {
-        console.log("It puked", error);
+        console.log("Not good", error);
       });
+
+      console.log(state.Game.games);
     }
   }
 });
@@ -22808,8 +22816,7 @@ router.on({
     return render(state.Home);
   },
   ":page": function page(params) {
-    var view = (0, _lodash.capitalize)(params.page);
-    render(state[view]);
+    return render(state[(0, _lodash.capitalize)(params.page)]);
   }
 }).resolve();
 },{"./components":"components/index.js","./store":"store/index.js","axios":"node_modules/axios/index.js","navigo":"node_modules/navigo/lib/navigo.min.js","lodash":"node_modules/lodash/lodash.js","dotenv":"node_modules/dotenv/lib/main.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -22840,7 +22847,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56253" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63120" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
