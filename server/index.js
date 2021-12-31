@@ -52,7 +52,7 @@ app
   .route("/Current")
 
   .post((request, response) => {
-    response.json(request);
+    response.json(request.body);
   });
 
 app.use("/games", games);
