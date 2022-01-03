@@ -388,7 +388,7 @@ var kelvinToFahrenheit = function kelvinToFahrenheit(kelvinTemp) {
 
 
 var _default = function _default(st) {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section id=\"Home\">\n    <h3>\n      Temperature in ", " is\n      ", "F. It feels like\n      ", "F.\n    </h3>\n    <div class=\"boxtop\">\n      <p>GAME SPACE</p>\n    </div>\n\n    <div class=\"box\"></div>\n    <div class=\"buttonBar\">\n      <button>\n        New Game\n      </button>\n      <button>\n        Number of Players\n      </button>\n      <button>\n        Shuffle & Deal\n      </button>\n    </div>\n  </section>\n"])), st.weather.city, kelvinToFahrenheit(st.weather.temp), kelvinToFahrenheit(st.weather.temp));
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section id=\"Home\">\n    <h3>\n      Temperature in ", " is\n      ", "F. It feels like\n      ", "F.\n    </h3>\n    <div class=\"boxtop\">\n      <p>GAME SPACE</p>\n    </div>\n\n    <div class=\"box\">\n      <button>\n        Your Hand\n      </button>\n      <button>\n        Computer\n      </button>\n    </div>\n    <div class=\"buttonBar\">\n      <button>\n        New Game\n      </button>\n      <button>\n        Number of Players\n      </button>\n      <button>\n        Shuffle & Deal\n      </button>\n    </div>\n  </section>\n"])), st.weather.city, kelvinToFahrenheit(st.weather.temp), kelvinToFahrenheit(st.weather.temp));
 };
 
 exports.default = _default;
@@ -22848,7 +22848,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58920" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49876" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

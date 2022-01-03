@@ -15,7 +15,14 @@ export default (st) => html`
       <p>GAME SPACE</p>
     </div>
 
-    <div class="box"></div>
+    <div class="box">
+      <button>
+        Your Hand
+      </button>
+      <button>
+        Computer
+      </button>
+    </div>
     <div class="buttonBar">
       <button>
         New Game
