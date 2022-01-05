@@ -116,7 +116,7 @@ router
   .resolve();
 
 function initGame() {
-  let cards = [
+  let deck = [
     { sideA: 0, sideB: 0 },
     { sideA: 0, sideB: 1 },
     { sideA: 0, sideB: 2 },
@@ -139,6 +139,29 @@ function initGame() {
     { sideA: 2, sideB: 6 },
     { sideA: 2, sideB: 7 },
     { sideA: 3, sideB: 3 },
-    { sideA: 3, sideB: 3 }
+    { sideA: 3, sideB: 4 },
+    { sideA: 3, sideB: 5 },
+    { sideA: 3, sideB: 6 },
+    { sideA: 3, sideB: 7 },
+    { sideA: 4, sideB: 4 },
+    { sideA: 4, sideB: 5 },
+    { sideA: 4, sideB: 6 },
+    { sideA: 4, sideB: 7 },
+    { sideA: 5, sideB: 5 },
+    { sideA: 5, sideB: 6 },
+    { sideA: 5, sideB: 7 },
+    { sideA: 6, sideB: 6 },
+    { sideA: 6, sideB: 7 },
+    { sideA: 7, sideB: 7 }
   ];
 }
+
+//shuffle cards (random function)
+//deal one card of player's hand, then...
+//deal one card of computer's hand (repeat until each player has 9 cards)
+//remaining cards are assigned to the boneyard (randomly)
+//highest double of either player's hand is identified
+//first card played is 7-7, or highest double from either hand
+//the player the double is taken from has one less card
+//next play must match the number of the double
+//card is placed perpendicular to double

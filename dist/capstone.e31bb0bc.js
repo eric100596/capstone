@@ -22819,80 +22819,51 @@ router.on({
   ":page": function page(params) {
     return render(state[(0, _lodash.capitalize)(params.page)]);
   }
-}).resolve();
-
-function initGame() {
-  var cards = [{
-    sideA: 0,
-    sideB: 0
-  }, {
-    sideA: 0,
-    sideB: 1
-  }, {
-    sideA: 0,
-    sideB: 2
-  }, {
-    sideA: 0,
-    sideB: 3
-  }, {
-    sideA: 0,
-    sideB: 4
-  }, {
-    sideA: 0,
-    sideB: 5
-  }, {
-    sideA: 0,
-    sideB: 6
-  }, {
-    sideA: 0,
-    sideB: 7
-  }, {
-    sideA: 1,
-    sideB: 1
-  }, {
-    sideA: 1,
-    sideB: 2
-  }, {
-    sideA: 1,
-    sideB: 3
-  }, {
-    sideA: 1,
-    sideB: 4
-  }, {
-    sideA: 1,
-    sideB: 5
-  }, {
-    sideA: 1,
-    sideB: 6
-  }, {
-    sideA: 1,
-    sideB: 7
-  }, {
-    sideA: 2,
-    sideB: 2
-  }, {
-    sideA: 2,
-    sideB: 3
-  }, {
-    sideA: 2,
-    sideB: 4
-  }, {
-    sideA: 2,
-    sideB: 5
-  }, {
-    sideA: 2,
-    sideB: 6
-  }, {
-    sideA: 2,
-    sideB: 7
-  }, {
-    sideA: 3,
-    sideB: 3
-  }, {
-    sideA: 3,
-    sideB: 3
-  }];
-}
+}).resolve(); // function initGame() {
+//   let deck = [
+//     { sideA: 0, sideB: 0 },
+//     { sideA: 0, sideB: 1 },
+//     { sideA: 0, sideB: 2 },
+//     { sideA: 0, sideB: 3 },
+//     { sideA: 0, sideB: 4 },
+//     { sideA: 0, sideB: 5 },
+//     { sideA: 0, sideB: 6 },
+//     { sideA: 0, sideB: 7 },
+//     { sideA: 1, sideB: 1 },
+//     { sideA: 1, sideB: 2 },
+//     { sideA: 1, sideB: 3 },
+//     { sideA: 1, sideB: 4 },
+//     { sideA: 1, sideB: 5 },
+//     { sideA: 1, sideB: 6 },
+//     { sideA: 1, sideB: 7 },
+//     { sideA: 2, sideB: 2 },
+//     { sideA: 2, sideB: 3 },
+//     { sideA: 2, sideB: 4 },
+//     { sideA: 2, sideB: 5 },
+//     { sideA: 2, sideB: 6 },
+//     { sideA: 2, sideB: 7 },
+//     { sideA: 3, sideB: 3 },
+//     { sideA: 3, sideB: 4 },
+//     { sideA: 3, sideB: 5 },
+//     { sideA: 3, sideB: 6 },
+//     { sideA: 3, sideB: 7 },
+//     { sideA: 4, sideB: 4 },
+//     { sideA: 4, sideB: 5 },
+//     { sideA: 4, sideB: 6 },
+//     { sideA: 4, sideB: 7 },
+//     { sideA: 5, sideB: 5 },
+//     { sideA: 5, sideB: 6 },
+//     { sideA: 5, sideB: 7 },
+//     { sideA: 6, sideB: 6 },
+//     { sideA: 6, sideB: 7 },
+//     { sideA: 7, sideB: 7 }
+//   ];
+// }
+// Let playerHand, computer;
+// function startGame() {
+//   const deck = newDeck();
+//   deck.shuffle();
+// }
 },{"./components":"components/index.js","./store":"store/index.js","axios":"node_modules/axios/index.js","navigo":"node_modules/navigo/lib/navigo.min.js","lodash":"node_modules/lodash/lodash.js","dotenv":"node_modules/dotenv/lib/main.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -22921,7 +22892,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58903" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64430" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
