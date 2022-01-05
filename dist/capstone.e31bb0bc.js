@@ -493,7 +493,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var _default = function _default() {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <form id=\"current\" method=\"POST\" action=\"\">\n    <h2>Statistics</h2>\n    <div>\n      <label for=\"playerName\">Your name:</label>\n      <input\n        type=\"text\"\n        name=\"name\"\n        id=\"name\"\n        placeholder=\"Enter Your Name\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameNumber\">Game number:</label>\n      <input\n        type=\"text\"\n        name=\"gameNumber\"\n        id=\"gameNumber\"\n        placeholder=\"Enter Game Number\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameStatus\">Game status:</label>\n      <select id=\"gameStatus\" name=\"gameStatus\">\n        <option value=\"\">Did you win?</option>\n        <option value=\"win\">I won!</option>\n        <option value=\"lost\">I lost!</option>\n      </select>\n    </div>\n    <div>\n      <label for=\"score\">Score:</label>\n      <input\n        type=\"text\"\n        name=\"score\"\n        id=\"score\"\n        placeholder=\"Enter your score\"\n        required\n      />\n    </div>\n    <input type=\"submit\" name=\"submit\" value=\"Submit\" />\n  </form>\n"])));
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <form id=\"current\" method=\"POST\" action=\"\">\n    <h2>Statistics</h2>\n    <div>\n      <label for=\"playerName\">Your name:</label>\n      <input\n        type=\"text\"\n        name=\"playerName\"\n        id=\"playerName\"\n        placeholder=\"Enter Your Name\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameNumber\">Game number:</label>\n      <input\n        type=\"text\"\n        name=\"gameNumber\"\n        id=\"gameNumber\"\n        placeholder=\"Enter Game Number\"\n        required\n      />\n    </div>\n    <div>\n      <label for=\"gameStatus\">Game status:</label>\n      <select id=\"gameStatus\" name=\"gameStatus\">\n        <option value=\"\">Did you win?</option>\n        <option value=\"win\">I won!</option>\n        <option value=\"lost\">I lost!</option>\n      </select>\n    </div>\n    <div>\n      <label for=\"score\">Score:</label>\n      <input\n        type=\"text\"\n        name=\"score\"\n        id=\"score\"\n        placeholder=\"Enter your score\"\n        required\n      />\n    </div>\n    <input type=\"submit\" name=\"submit\" value=\"Submit\" />\n  </form>\n"])));
 };
 
 exports.default = _default;
@@ -515,7 +515,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var _default = function _default(st) {
   return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <table id=\"games\">\n    <tr>\n      <th>PlayerName</th>\n      <th>GameNumber</th>\n      <th>GameStatus</th>\n      <th>Score</th>\n    </tr>\n    ", "\n  </table>\n"])), st.games.map(function (game) {
-    return "<tr><td>".concat(game.playerName, "</td><td>").concat(game.gameNumber, "</td><td>").concat(game.Status, "</td><td>").concat(game.score, "</td></tr>");
+    return "<tr><td>".concat(game.playerName, "</td><td>").concat(game.gameNumber, "</td><td>").concat(game.gameStatus, "</td><td>").concat(game.score, "</td></tr>");
   }).join(""));
 };
 
@@ -22820,6 +22820,79 @@ router.on({
     return render(state[(0, _lodash.capitalize)(params.page)]);
   }
 }).resolve();
+
+function initGame() {
+  var cards = [{
+    sideA: 0,
+    sideB: 0
+  }, {
+    sideA: 0,
+    sideB: 1
+  }, {
+    sideA: 0,
+    sideB: 2
+  }, {
+    sideA: 0,
+    sideB: 3
+  }, {
+    sideA: 0,
+    sideB: 4
+  }, {
+    sideA: 0,
+    sideB: 5
+  }, {
+    sideA: 0,
+    sideB: 6
+  }, {
+    sideA: 0,
+    sideB: 7
+  }, {
+    sideA: 1,
+    sideB: 1
+  }, {
+    sideA: 1,
+    sideB: 2
+  }, {
+    sideA: 1,
+    sideB: 3
+  }, {
+    sideA: 1,
+    sideB: 4
+  }, {
+    sideA: 1,
+    sideB: 5
+  }, {
+    sideA: 1,
+    sideB: 6
+  }, {
+    sideA: 1,
+    sideB: 7
+  }, {
+    sideA: 2,
+    sideB: 2
+  }, {
+    sideA: 2,
+    sideB: 3
+  }, {
+    sideA: 2,
+    sideB: 4
+  }, {
+    sideA: 2,
+    sideB: 5
+  }, {
+    sideA: 2,
+    sideB: 6
+  }, {
+    sideA: 2,
+    sideB: 7
+  }, {
+    sideA: 3,
+    sideB: 3
+  }, {
+    sideA: 3,
+    sideB: 3
+  }];
+}
 },{"./components":"components/index.js","./store":"store/index.js","axios":"node_modules/axios/index.js","navigo":"node_modules/navigo/lib/navigo.min.js","lodash":"node_modules/lodash/lodash.js","dotenv":"node_modules/dotenv/lib/main.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -22848,7 +22921,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49876" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58903" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

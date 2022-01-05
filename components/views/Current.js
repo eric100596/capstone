@@ -7,8 +7,8 @@ export default () => html`
       <label for="playerName">Your name:</label>
       <input
         type="text"
-        name="name"
-        id="name"
+        name="playerName"
+        id="playerName"
         placeholder="Enter Your Name"
         required
       />

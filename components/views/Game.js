@@ -10,7 +10,7 @@ export default st => html`
     </tr>
     ${st.games
       .map(game => {
-        return `<tr><td>${game.playerName}</td><td>${game.gameNumber}</td><td>${game.Status}</td><td>${game.score}</td></tr>`;
+        return `<tr><td>${game.playerName}</td><td>${game.gameNumber}</td><td>${game.gameStatus}</td><td>${game.score}</td></tr>`;
       })
       .join("")}
   </table>

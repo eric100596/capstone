@@ -114,3 +114,31 @@ router
     ":page": params => render(state[capitalize(params.page)])
   })
   .resolve();
+
+function initGame() {
+  let cards = [
+    { sideA: 0, sideB: 0 },
+    { sideA: 0, sideB: 1 },
+    { sideA: 0, sideB: 2 },
+    { sideA: 0, sideB: 3 },
+    { sideA: 0, sideB: 4 },
+    { sideA: 0, sideB: 5 },
+    { sideA: 0, sideB: 6 },
+    { sideA: 0, sideB: 7 },
+    { sideA: 1, sideB: 1 },
+    { sideA: 1, sideB: 2 },
+    { sideA: 1, sideB: 3 },
+    { sideA: 1, sideB: 4 },
+    { sideA: 1, sideB: 5 },
+    { sideA: 1, sideB: 6 },
+    { sideA: 1, sideB: 7 },
+    { sideA: 2, sideB: 2 },
+    { sideA: 2, sideB: 3 },
+    { sideA: 2, sideB: 4 },
+    { sideA: 2, sideB: 5 },
+    { sideA: 2, sideB: 6 },
+    { sideA: 2, sideB: 7 },
+    { sideA: 3, sideB: 3 },
+    { sideA: 3, sideB: 3 }
+  ];
+}
