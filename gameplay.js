@@ -1,42 +1,44 @@
-//declare card elements
+import card from "./assets/Camino-36/*.JPG";
+export default () = {
 
+//declare card elements
 const deckValues = [
-  { sideA: 0, sideB: 0, picture: "assets/Camino-36/Camino 0-0 (1).JPG" },
-  { sideA: 0, sideB: 1, picture: "assets/Camino-36/Camino 0-1.JPG" },
-  { sideA: 0, sideB: 2, picture: "assets/Camino-36/Camino 0-2.JPG" },
-  { sideA: 0, sideB: 3, picture: "assets/Camino-36/Camino 0-3.JPG" },
-  { sideA: 0, sideB: 4, picture: "assets/Camino-36/Camino 0-4.JPG" },
-  { sideA: 0, sideB: 5, picture: "assets/Camino-36/Camino 0-5.JPG" },
-  { sideA: 0, sideB: 6, picture: "assets/Camino-36/Camino 0-6 (1).JPG" },
-  { sideA: 0, sideB: 7, picture: "assets/Camino-36/Camino 0-7.jpg" },
-  { sideA: 1, sideB: 1, picture: "assets/Camino-36/Camino 1-1.JPG" },
-  { sideA: 1, sideB: 2, picture: "assets/Camino-36/Camino 1-2.JPG" },
-  { sideA: 1, sideB: 3, picture: "assets/Camino-36/Camino 1-3.JPG" },
-  { sideA: 1, sideB: 4, picture: "assets/Camino-36/Camino 1-4.JPG" },
-  { sideA: 1, sideB: 5, picture: "assets/Camino-36/Camino 1-5.JPG" },
-  { sideA: 1, sideB: 6, picture: "assets/Camino-36/Camino 1-6.JPG" },
-  { sideA: 1, sideB: 7, picture: "assets/Camino-36/Camino 1-7.jpg" },
-  { sideA: 2, sideB: 2, picture: "assets/Camino-36/Camino 2-2.JPG" },
-  { sideA: 2, sideB: 3, picture: "assets/Camino-36/Camino 2-3.JPG" },
-  { sideA: 2, sideB: 4, picture: "assets/Camino-36/Camino 2-4.JPG" },
-  { sideA: 2, sideB: 5, picture: "assets/Camino-36/Camino 2-5.JPG" },
-  { sideA: 2, sideB: 6, picture: "assets/Camino-36/Camino 2-6.JPG" },
-  { sideA: 2, sideB: 7, picture: "assets/Camino-36/Camino 2-7.jpg" },
-  { sideA: 3, sideB: 3, picture: "assets/Camino-36/Camino 3-3.JPG" },
-  { sideA: 3, sideB: 4, picture: "assets/Camino-36/Camino 3-4.JPG" },
-  { sideA: 3, sideB: 5, picture: "assets/Camino-36/Camino 3-5.JPG" },
-  { sideA: 3, sideB: 6, picture: "assets/Camino-36/Camino 3-6.JPG" },
-  { sideA: 3, sideB: 7, picture: "assets/Camino-36/Camino 3-7.jpg" },
-  { sideA: 4, sideB: 4, picture: "assets/Camino-36/Camino 4-4.JPG" },
-  { sideA: 4, sideB: 5, picture: "assets/Camino-36/Camino 4-5.JPG" },
-  { sideA: 4, sideB: 6, picture: "assets/Camino-36/Camino 4-6.JPG" },
-  { sideA: 4, sideB: 7, picture: "assets/Camino-36/Camino 4-7.jpg" },
-  { sideA: 5, sideB: 5, picture: "assets/Camino-36/Camino 5-5.JPG" },
-  { sideA: 5, sideB: 6, picture: "assets/Camino-36/Camino 5-6.JPG" },
-  { sideA: 5, sideB: 7, picture: "assets/Camino-36/Camino 5-7.jpg" },
-  { sideA: 6, sideB: 6, picture: "assets/Camino-36/Camino 6-6.JPG" },
-  { sideA: 6, sideB: 7, picture: "assets/Camino-36/Camino 6-7.jpg" },
-  { sideA: 7, sideB: 7, picture: "assets/Camino-36/Camino 7-7.jpg" }
+  { sideA: 0, sideB: 0, picture: "/assets/Camino-36/Camino0-0.JPG" },
+  { sideA: 0, sideB: 1, picture: "/assets/Camino-36/Camino0-1.JPG" },
+  { sideA: 0, sideB: 2, picture: "/assets/Camino-36/Camino0-2.JPG" },
+  { sideA: 0, sideB: 3, picture: "/assets/Camino-36/Camino0-3.JPG" },
+  { sideA: 0, sideB: 4, picture: "/assets/Camino-36/Camino0-4.JPG" },
+  { sideA: 0, sideB: 5, picture: "/assets/Camino-36/Camino0-5.JPG" },
+  { sideA: 0, sideB: 6, picture: "/assets/Camino-36/Camino0-6.JPG" },
+  { sideA: 0, sideB: 7, picture: "/assets/Camino-36/Camino0-7.JPG" },
+  { sideA: 1, sideB: 1, picture: "/assets/Camino-36/Camino1-1.JPG" },
+  { sideA: 1, sideB: 2, picture: "/assets/Camino-36/Camino1-2.JPG" },
+  { sideA: 1, sideB: 3, picture: "/assets/Camino-36/Camino1-3.JPG" },
+  { sideA: 1, sideB: 4, picture: "/assets/Camino-36/Camino1-4.JPG" },
+  { sideA: 1, sideB: 5, picture: "/assets/Camino-36/Camino1-5.JPG" },
+  { sideA: 1, sideB: 6, picture: "/assets/Camino-36/Camino1-6.JPG" },
+  { sideA: 1, sideB: 7, picture: "/assets/Camino-36/Camino1-7.JPG" },
+  { sideA: 2, sideB: 2, picture: "/assets/Camino-36/Camino2-2.JPG" },
+  { sideA: 2, sideB: 3, picture: "/assets/Camino-36/Camino2-3.JPG" },
+  { sideA: 2, sideB: 4, picture: "/assets/Camino-36/Camino2-4.JPG" },
+  { sideA: 2, sideB: 5, picture: "/assets/Camino-36/Camino2-5.JPG" },
+  { sideA: 2, sideB: 6, picture: "/assets/Camino-36/Camino2-6.JPG" },
+  { sideA: 2, sideB: 7, picture: "/assets/Camino-36/Camino2-7.JPG" },
+  { sideA: 3, sideB: 3, picture: "/assets/Camino-36/Camino3-3.JPG" },
+  { sideA: 3, sideB: 4, picture: "/assets/Camino-36/Camino3-4.JPG" },
+  { sideA: 3, sideB: 5, picture: "/assets/Camino-36/Camino3-5.JPG" },
+  { sideA: 3, sideB: 6, picture: "/assets/Camino-36/Camino3-6.JPG" },
+  { sideA: 3, sideB: 7, picture: "/assets/Camino-36/Camino3-7.JPG" },
+  { sideA: 4, sideB: 4, picture: "/assets/Camino-36/Camino4-4.JPG" },
+  { sideA: 4, sideB: 5, picture: "/assets/Camino-36/Camino4-5.JPG" },
+  { sideA: 4, sideB: 6, picture: "/assets/Camino-36/Camino4-6.JPG" },
+  { sideA: 4, sideB: 7, picture: "/assets/Camino-36/Camino4-7.JPG" },
+  { sideA: 5, sideB: 5, picture: "/assets/Camino-36/Camino5-5.JPG" },
+  { sideA: 5, sideB: 6, picture: "/assets/Camino-36/Camino5-6.JPG" },
+  { sideA: 5, sideB: 7, picture: "/assets/Camino-36/Camino5-7.JPG" },
+  { sideA: 6, sideB: 6, picture: "/assets/Camino-36/Camino6-6.JPG" },
+  { sideA: 6, sideB: 7, picture: "/assets/Camino-36/Camino6-7.JPG" },
+  { sideA: 7, sideB: 7, picture: "/assets/Camino-36/Camino7-7.JPG" }
 ];
 
 //shuffle deckValues
@@ -148,3 +150,6 @@ function doubleCheck(playerDouble, computerDouble) {
 }
 
 doubleCheck(pDouble, cDouble);
+}
+
+
