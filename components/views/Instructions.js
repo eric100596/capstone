@@ -3,16 +3,17 @@ import html from "html-literal";
 export default () => html`
   <div id="instructions1">
     <h3>Instructions</h3>
-    <> First, select the number of players for the game. Next, tap the “DEAL”
-    button, and allow the website to create a hand for each player. The player
-    with the “7-7” card plays first (taps their card causing it to move the
-    center of the screen). The player to the left of the person who plays first
-    make the next play. This player MUST play a card that matches at least one
-    number of ANY of the cards that have been previously played (in this case, a
-    card with a “7”). The program will automatically place this card
-    perpendicular (to for a “T”) to the first card played. Play then moves to
-    the next player (and so on), who again MUST play a card that matches at
-    least one number of ANY of the cards that have been previously played.
+    <> First, select the number of players for the game. Next, tap the “SHUFFLE
+    & DEAL” button, and allow the website to create a hand for each player. The
+    player with the “7-7” (or the highest double number) card plays first
+    (clicks their card causing it to move the center of the screen). The player
+    to the left of the person who plays first make the next play. This player
+    MUST play a card that matches at least one number of ANY of the cards that
+    have been previously played (in this case, a card with a “7”). The program
+    will automatically place this card perpendicular (forming a “T”) to the
+    first card played. Play then moves to the next player (and so on), who again
+    MUST play a card that matches at least one number of ANY of the cards that
+    have been previously played.
   </div>
   <br />
   <br />
