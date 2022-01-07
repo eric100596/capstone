@@ -409,7 +409,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var _default = function _default() {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <div id=\"instructions1\">\n    <h3>Instructions</h3>\n    <> First, select the number of players for the game. Next, tap the \u201CDEAL\u201D\n    button, and allow the website to create a hand for each player. The player\n    with the \u201C7-7\u201D card plays first (taps their card causing it to move the\n    center of the screen). The player to the left of the person who plays first\n    make the next play. This player MUST play a card that matches at least one\n    number of ANY of the cards that have been previously played (in this case, a\n    card with a \u201C7\u201D). The program will automatically place this card\n    perpendicular (to for a \u201CT\u201D) to the first card played. Play then moves to\n    the next player (and so on), who again MUST play a card that matches at\n    least one number of ANY of the cards that have been previously played.\n  </div>\n  <br />\n  <br />\n  <br />\n  <br />\n  <br />\n  <br />\n  <div id=\"instructions2\">\n    <h4>Scoring</h4>\n\n    The object of the game is to be the first player to reach 150 points. Points\n    are awarded if the numbers on the ends of the cards (OUTSIDE NUMBERS) from\n    ANY of the cards equal a multiple of 5. If a play is made that does not\n    result in the numbers on the ends of the cards equalling a multiple of 5,\n    play just moves to the next player. Each hand is over once one player plays\n    his/her last card, at which time ALL OF THE REMAINING CARDS are awarded to\n    this player. The nearest multiple of 5 of the sum of ALL of the numbers on\n    each of these cards is added to this player\u2019s score. The game will\n    automatically reshuffle the cards and deal a new hand to each player. Play\n    resumes with the player who played the last card playing ANY card to begin\n    the next hand. Play continues until one player\u2019s score reaches 150 points.\n  </div>\n  <br />\n  <br />\n  <br />\n  <br />\n  <br />\n  <br />\n  <br />\n  <div id=\"instructions3\">\n    <h4>Special Situations</h4>\n    <ul>\n      <li>\n        If a player cannot match ANY of the numbers on the ends of the cards,\n        the player MUST either PASS (play passes to the next player), or choose\n        a card from the \u201CBoneyard\u201D. If there are no cards in the Boneyard, play\n        automatically passes to the next player.\n      </li>\n      <li>\n        Cards with the same number on each side are ALWAYS played sideways\n        (perpendicular) to the number it matches. Cards with the same number\n        represent the total amount of both numbers (Example: 5 - 5 card has a\n        value of 10.\n      </li>\n      <li>\n        If no one has the \u201C7-7\u201D card at the beginning of the game, the player\n        with the HIGHEST DOUBLE NUMBER CARD plays first. Play continues with the\n        player to the left of this player playing next. Only the FIRST double\n        number card can have cards played on all four sides of it.\n      </li>\n    </ul>\n  </div>\n"])));
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <div id=\"instructions1\">\n    <h3>Instructions</h3>\n    <> First, select the number of players for the game. Next, tap the \u201CSHUFFLE\n    & DEAL\u201D button, and allow the website to create a hand for each player. The\n    player with the \u201C7-7\u201D (or the highest double number) card plays first\n    (clicks their card causing it to move the center of the screen). The player\n    to the left of the person who plays first make the next play. This player\n    MUST play a card that matches at least one number of ANY of the cards that\n    have been previously played (in this case, a card with a \u201C7\u201D). The program\n    will automatically place this card perpendicular (forming a \u201CT\u201D) to the\n    first card played. Play then moves to the next player (and so on), who again\n    MUST play a card that matches at least one number of ANY of the cards that\n    have been previously played.\n  </div>\n  <br />\n  <br />\n  <br />\n  <br />\n  <br />\n  <br />\n  <div id=\"instructions2\">\n    <h4>Scoring</h4>\n\n    The object of the game is to be the first player to reach 150 points. Points\n    are awarded if the numbers on the ends of the cards (OUTSIDE NUMBERS) from\n    ANY of the cards equal a multiple of 5. If a play is made that does not\n    result in the numbers on the ends of the cards equalling a multiple of 5,\n    play just moves to the next player. Each hand is over once one player plays\n    his/her last card, at which time ALL OF THE REMAINING CARDS are awarded to\n    this player. The nearest multiple of 5 of the sum of ALL of the numbers on\n    each of these cards is added to this player\u2019s score. The game will\n    automatically reshuffle the cards and deal a new hand to each player. Play\n    resumes with the player who played the last card playing ANY card to begin\n    the next hand. Play continues until one player\u2019s score reaches 150 points.\n  </div>\n  <br />\n  <br />\n  <br />\n  <br />\n  <br />\n  <br />\n  <br />\n  <div id=\"instructions3\">\n    <h4>Special Situations</h4>\n    <ul>\n      <li>\n        If a player cannot match ANY of the numbers on the ends of the cards,\n        the player MUST either PASS (play passes to the next player), or choose\n        a card from the \u201CBoneyard\u201D. If there are no cards in the Boneyard, play\n        automatically passes to the next player.\n      </li>\n      <li>\n        Cards with the same number on each side are ALWAYS played sideways\n        (perpendicular) to the number it matches. Cards with the same number\n        represent the total amount of both numbers (Example: 5 - 5 card has a\n        value of 10.\n      </li>\n      <li>\n        If no one has the \u201C7-7\u201D card at the beginning of the game, the player\n        with the HIGHEST DOUBLE NUMBER CARD plays first. Play continues with the\n        player to the left of this player playing next. Only the FIRST double\n        number card can have cards played on all four sides of it.\n      </li>\n    </ul>\n  </div>\n"])));
 };
 
 exports.default = _default;
@@ -22819,51 +22819,127 @@ router.on({
   ":page": function page(params) {
     return render(state[(0, _lodash.capitalize)(params.page)]);
   }
-}).resolve(); // function initGame() {
-//   let deck = [
-//     { sideA: 0, sideB: 0 },
-//     { sideA: 0, sideB: 1 },
-//     { sideA: 0, sideB: 2 },
-//     { sideA: 0, sideB: 3 },
-//     { sideA: 0, sideB: 4 },
-//     { sideA: 0, sideB: 5 },
-//     { sideA: 0, sideB: 6 },
-//     { sideA: 0, sideB: 7 },
-//     { sideA: 1, sideB: 1 },
-//     { sideA: 1, sideB: 2 },
-//     { sideA: 1, sideB: 3 },
-//     { sideA: 1, sideB: 4 },
-//     { sideA: 1, sideB: 5 },
-//     { sideA: 1, sideB: 6 },
-//     { sideA: 1, sideB: 7 },
-//     { sideA: 2, sideB: 2 },
-//     { sideA: 2, sideB: 3 },
-//     { sideA: 2, sideB: 4 },
-//     { sideA: 2, sideB: 5 },
-//     { sideA: 2, sideB: 6 },
-//     { sideA: 2, sideB: 7 },
-//     { sideA: 3, sideB: 3 },
-//     { sideA: 3, sideB: 4 },
-//     { sideA: 3, sideB: 5 },
-//     { sideA: 3, sideB: 6 },
-//     { sideA: 3, sideB: 7 },
-//     { sideA: 4, sideB: 4 },
-//     { sideA: 4, sideB: 5 },
-//     { sideA: 4, sideB: 6 },
-//     { sideA: 4, sideB: 7 },
-//     { sideA: 5, sideB: 5 },
-//     { sideA: 5, sideB: 6 },
-//     { sideA: 5, sideB: 7 },
-//     { sideA: 6, sideB: 6 },
-//     { sideA: 6, sideB: 7 },
-//     { sideA: 7, sideB: 7 }
-//   ];
-// }
-// Let playerHand, computer;
-// function startGame() {
-//   const deck = newDeck();
-//   deck.shuffle();
-// }
+}).resolve();
+
+function initGame() {
+  var deck = [{
+    sideA: 0,
+    sideB: 0
+  }, {
+    sideA: 0,
+    sideB: 1
+  }, {
+    sideA: 0,
+    sideB: 2
+  }, {
+    sideA: 0,
+    sideB: 3
+  }, {
+    sideA: 0,
+    sideB: 4
+  }, {
+    sideA: 0,
+    sideB: 5
+  }, {
+    sideA: 0,
+    sideB: 6
+  }, {
+    sideA: 0,
+    sideB: 7
+  }, {
+    sideA: 1,
+    sideB: 1
+  }, {
+    sideA: 1,
+    sideB: 2
+  }, {
+    sideA: 1,
+    sideB: 3
+  }, {
+    sideA: 1,
+    sideB: 4
+  }, {
+    sideA: 1,
+    sideB: 5
+  }, {
+    sideA: 1,
+    sideB: 6
+  }, {
+    sideA: 1,
+    sideB: 7
+  }, {
+    sideA: 2,
+    sideB: 2
+  }, {
+    sideA: 2,
+    sideB: 3
+  }, {
+    sideA: 2,
+    sideB: 4
+  }, {
+    sideA: 2,
+    sideB: 5
+  }, {
+    sideA: 2,
+    sideB: 6
+  }, {
+    sideA: 2,
+    sideB: 7
+  }, {
+    sideA: 3,
+    sideB: 3
+  }, {
+    sideA: 3,
+    sideB: 4
+  }, {
+    sideA: 3,
+    sideB: 5
+  }, {
+    sideA: 3,
+    sideB: 6
+  }, {
+    sideA: 3,
+    sideB: 7
+  }, {
+    sideA: 4,
+    sideB: 4
+  }, {
+    sideA: 4,
+    sideB: 5
+  }, {
+    sideA: 4,
+    sideB: 6
+  }, {
+    sideA: 4,
+    sideB: 7
+  }, {
+    sideA: 5,
+    sideB: 5
+  }, {
+    sideA: 5,
+    sideB: 6
+  }, {
+    sideA: 5,
+    sideB: 7
+  }, {
+    sideA: 6,
+    sideB: 6
+  }, {
+    sideA: 6,
+    sideB: 7
+  }, {
+    sideA: 7,
+    sideB: 7
+  }];
+} //shuffle cards (random function)
+//deal one card of player's hand, then...
+//deal one card of computer's hand (repeat until each player has 9 cards)
+//remaining cards are assigned to the boneyard (randomly)
+//highest double of either player's hand is identified
+//first card played is 7-7, or highest double from either hand
+//the player the double is taken from has one less card
+//next play must match the number of the double
+//card is placed perpendicular to double
 },{"./components":"components/index.js","./store":"store/index.js","axios":"node_modules/axios/index.js","navigo":"node_modules/navigo/lib/navigo.min.js","lodash":"node_modules/lodash/lodash.js","dotenv":"node_modules/dotenv/lib/main.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -22892,7 +22968,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64430" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56792" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
