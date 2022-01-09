@@ -2,11 +2,16 @@ html {
   background-color: black;
 }
 
+body{
+  margin: 0;
+  padding: 0;
+}
 .title-bar {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  margin:
+  margin: auto;
+  width: 100vw;
 }
 
 .title-bar > img {

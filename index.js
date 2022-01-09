@@ -158,10 +158,16 @@ function initGame() {
 
 //shuffle cards (random function)
 //deal one card of player's hand, then...
-//deal one card of computer's hand (repeat until each player has 9 cards)
-//remaining cards are assigned to the boneyard (randomly)
+//deal one card of computer's hand (repeat until each player has equal # of cards)
+//remaining cards are assigned to the boneyard
 //highest double of either player's hand is identified
 //first card played is 7-7, or highest double from either hand
+//make it so each player can see their hand
 //the player the double is taken from has one less card
 //next play must match the number of the double
 //card is placed perpendicular to double
+//when player can't play, choose from boneyard until can play (if still cannot play, then pass)
+//create code for "pass" (cannot match cards in play from cards in hand)
+//when edges equal multiple of 5, add points to player's score
+//when one player plays last card, ALL other cards are totaled and points (closest multiple of 5) is added to that player's score
+//stop game when one player reaches 150 points
