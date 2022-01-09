@@ -6,6 +6,7 @@ html {
   display: flex;
   flex-flow: row;
   justify-content: center;
+  margin:
 }
 
 .title-bar > img {
@@ -170,7 +171,7 @@ a {
   }
 }
 
-@media (in-width: 815px) {
+@media (min-width: 815px) {
   header, .box, #title {
     display: flex;
     flex-direction: column;
