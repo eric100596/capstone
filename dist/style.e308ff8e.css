@@ -159,6 +159,29 @@ a {
   }
 }
 
+@media (max-width: 815px) {
+  header, .box, #title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: min-content;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (in-width: 815px) {
+  header, .box, #title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: min-content;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+}
+
 nav > .fa-bars {
   color: white;
   width: 100px;
