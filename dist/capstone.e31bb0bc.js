@@ -366,8 +366,18 @@ var _default = function _default(links) {
 };
 
 exports.default = _default;
-},{"html-literal":"node_modules/html-literal/build/src/index.js"}],"assets/Camino-36/Camino0-0.JPG":[function(require,module,exports) {
-module.exports = "/Camino0-0.95a21ccc.JPG";
+},{"html-literal":"node_modules/html-literal/build/src/index.js"}],"assets/players/player1.png":[function(require,module,exports) {
+module.exports = "/player1.26386ea2.png";
+},{}],"assets/players/player2.png":[function(require,module,exports) {
+module.exports = "/player2.11768f99.png";
+},{}],"assets/players/player3.png":[function(require,module,exports) {
+module.exports = "/player3.5c62b72c.png";
+},{}],"assets/players/player4.png":[function(require,module,exports) {
+module.exports = "/player4.3503f6af.png";
+},{}],"assets/players/player5.png":[function(require,module,exports) {
+module.exports = "/player5.6e663e24.png";
+},{}],"assets/players/computer.png":[function(require,module,exports) {
+module.exports = "/computer.bfaf5b41.png";
 },{}],"components/views/Home.js":[function(require,module,exports) {
 "use strict";
 
@@ -378,7 +388,17 @@ exports.default = void 0;
 
 var _htmlLiteral = _interopRequireDefault(require("html-literal"));
 
-var _Camino = _interopRequireDefault(require("../../assets/Camino-36/Camino0-0.JPG"));
+var _player = _interopRequireDefault(require("../../assets/players/player1.png"));
+
+var _player2 = _interopRequireDefault(require("../../assets/players/player2.png"));
+
+var _player3 = _interopRequireDefault(require("../../assets/players/player3.png"));
+
+var _player4 = _interopRequireDefault(require("../../assets/players/player4.png"));
+
+var _player5 = _interopRequireDefault(require("../../assets/players/player5.png"));
+
+var _computer = _interopRequireDefault(require("../../assets/players/computer.png"));
 
 var _templateObject;
 
@@ -392,11 +412,11 @@ var kelvinToFahrenheit = function kelvinToFahrenheit(kelvinTemp) {
 
 
 var _default = function _default(st) {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section id=\"Home\">\n    <h3>\n      Temperature in ", " is\n      ", "F. It feels like\n      ", "F.\n    </h3>\n    <div class=\"boxtop\">\n      <p>GAME SPACE</p>\n    </div>\n\n    <div class=\"box\">\n      <section>\n        <img class=\"cardPicture\" src=\"", "\" />\n      </section>\n    </div>\n    <div class=\"buttonBar\">\n      <button>\n        New Game\n      </button>\n      <button>\n        Number of Players\n      </button>\n      <button>\n        Shuffle & Deal\n      </button>\n    </div>\n  </section>\n"])), st.weather.city, kelvinToFahrenheit(st.weather.temp), kelvinToFahrenheit(st.weather.temp), _Camino.default);
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section id=\"Home\">\n    <h3>\n      Temperature in ", " is\n      ", "F. It feels like\n      ", "F.\n    </h3>\n    <div class=\"boxtop\">\n      <p>GAME SPACE</p>\n    </div>\n\n    <div class=\"box\">\n      <div class=\"p1\">\n      <img class=\"cardPicture1\" src=\"", "\" />\n      </div>\n      <div class=\"p23\">\n      <img class=\"cardPicture2\" src=\"", "\" />\n      <img class=\"cardPicture3\" src=\"", "\" />\n      </div>\n\n        <div class=\"p4\">\n        <img class=\"cardPicture4\" src=\"", "\" />\n        </div>\n        <div class=\"p5C\">\n        <img class=\"cardPicture5\" src=\"", "\" />\n        <img class=\"cardPicture6\" src=\"", "\" />\n        </div>\n\n      </div>\n    </div>\n    <div class=\"buttonBar\">\n      <button>\n        New Game\n      </button>\n      <button>\n        Number of Players\n      </button>\n      <button>\n        Shuffle & Deal\n      </button>\n    </div>\n  </section>\n"])), st.weather.city, kelvinToFahrenheit(st.weather.temp), kelvinToFahrenheit(st.weather.temp), _player.default, _player2.default, _player3.default, _player4.default, _player5.default, _computer.default);
 };
 
 exports.default = _default;
-},{"html-literal":"node_modules/html-literal/build/src/index.js","../../assets/Camino-36/Camino0-0.JPG":"assets/Camino-36/Camino0-0.JPG"}],"components/views/Instructions.js":[function(require,module,exports) {
+},{"html-literal":"node_modules/html-literal/build/src/index.js","../../assets/players/player1.png":"assets/players/player1.png","../../assets/players/player2.png":"assets/players/player2.png","../../assets/players/player3.png":"assets/players/player3.png","../../assets/players/player4.png":"assets/players/player4.png","../../assets/players/player5.png":"assets/players/player5.png","../../assets/players/computer.png":"assets/players/computer.png"}],"components/views/Instructions.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22978,7 +22998,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54059" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62800" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

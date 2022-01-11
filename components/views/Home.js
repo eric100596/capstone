@@ -1,5 +1,10 @@
 import html from "html-literal";
-import card from "../../assets/Camino-36/Camino0-0.JPG";
+import card1 from "../../assets/players/player1.png";
+import card2 from "../../assets/players/player2.png";
+import card3 from "../../assets/players/player3.png";
+import card4 from "../../assets/players/player4.png";
+import card5 from "../../assets/players/player5.png";
+import card6 from "../../assets/players/computer.png";
 
 const kelvinToFahrenheit = kelvinTemp =>
   Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
@@ -17,9 +22,23 @@ export default (st) => html`
     </div>
 
     <div class="box">
-      <section>
-        <img class="cardPicture" src="${card}" />
-      </section>
+      <div class="p1">
+      <img class="cardPicture1" src="${card1}" />
+      </div>
+      <div class="p23">
+      <img class="cardPicture2" src="${card2}" />
+      <img class="cardPicture3" src="${card3}" />
+      </div>
+
+        <div class="p4">
+        <img class="cardPicture4" src="${card4}" />
+        </div>
+        <div class="p5C">
+        <img class="cardPicture5" src="${card5}" />
+        <img class="cardPicture6" src="${card6}" />
+        </div>
+
+      </div>
     </div>
     <div class="buttonBar">
       <button>

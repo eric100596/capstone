@@ -94,11 +94,48 @@ h4 {
   margin-bottom: auto;
   margin-right: auto;
   text-align: center;
+  display: block;
 }
 
-.cardPicture {
-  border: 5px solid red;
-  height: 50px;
+.p1 img {
+  border: 2px solid white;
+  height: 30px;
+  /* display: inline-block; */
+}
+
+.p23 {
+  height: 30px;
+  display: block;
+  transform: translateX(360px) translateY(130px)rotate(90deg);
+}
+
+.p23 img {
+  height: 30px;
+  margin-left: 80px;
+  border: 2px solid white;
+}
+
+.p4 {
+  height: 30px;
+  transform: translateY(400px);
+}
+
+.p4 img {
+  height: 30px;
+  border: 2px solid white;
+}
+
+.p5C {
+  height: 30px;
+  display: block;
+  transform: translateX(-360px) translateY(150px)rotate(-90deg);
+
+}
+
+.p5C img {
+  height: 30px;
+  margin-left: 80px;
+  border: 2px solid white;
 }
 
 #Home > div.box > button:nth-child(2){
@@ -201,19 +238,6 @@ a {
     font-size: 70px;
   }
 }
-/* @media (min-width: 815px) {
-  header, .box, #title {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: min-content;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8px;
-  }
-} */
-
-
 
 nav > .fa-bars {
   color: white;
