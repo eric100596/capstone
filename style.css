@@ -97,16 +97,19 @@ h4 {
   display: block;
 }
 
+.p1 {
+  transform: translateY(10px);
+}
+
 .p1 img {
   border: 2px solid white;
   height: 30px;
-  /* display: inline-block; */
 }
 
 .p23 {
   height: 30px;
   display: block;
-  transform: translateX(360px) translateY(130px)rotate(90deg);
+  transform: translateX(385px) translateY(150px)rotate(90deg);
 }
 
 .p23 img {
@@ -117,7 +120,7 @@ h4 {
 
 .p4 {
   height: 30px;
-  transform: translateY(400px);
+  transform: translateY(390px);
 }
 
 .p4 img {
@@ -128,7 +131,7 @@ h4 {
 .p5C {
   height: 30px;
   display: block;
-  transform: translateX(-360px) translateY(150px)rotate(-90deg);
+  transform: translateX(-385px) translateY(170px)rotate(-90deg);
 
 }
 
