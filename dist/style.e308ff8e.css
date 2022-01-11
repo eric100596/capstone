@@ -26,12 +26,15 @@ margin: auto;
 
 #title > h2 {
   margin-bottom: 10px;
+  width: 400px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 
 #title > h1 {
   font-family: cursive, 'Times New Roman', Times, serif;
-  font-size: 100px;
+  font-size: 90px;
   color: white;;
   text-align: center;
 }
@@ -184,6 +187,18 @@ a {
 @media (max-width: 815px) {
   .title-img {
     display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  #title > h1 {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 488px) {
+  #title > h1 {
+    font-size: 70px;
   }
 }
 /* @media (min-width: 815px) {
