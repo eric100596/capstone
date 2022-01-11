@@ -339,7 +339,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var _default = function _default() {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <header>\n    <div class=\"title-bar\">\n      <img src=\"", "\" />\n      <section id=\"title\">\n        <h1>DOUBLE-7</h1>\n        <h2>A religious \"dominoes-style\" card game for all ages!</h2>\n      </section>\n\n      <img src=\"", "\" />\n    </div>\n    <br />\n  </header>\n"])), _Dbl7Logo.default, _Dbl7Logo.default);
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <header>\n    <div class=\"title-bar\">\n      <img class=\"title-img\" src=\"", "\" />\n      <section id=\"title\">\n        <h1>DOUBLE-7</h1>\n        <h2>A religious \"dominoes-style\" card game for all ages!</h2>\n      </section>\n\n      <img class=\"title-img\" src=\"", "\" />\n    </div>\n    <br />\n  </header>\n"])), _Dbl7Logo.default, _Dbl7Logo.default);
 };
 
 exports.default = _default;
@@ -366,7 +366,9 @@ var _default = function _default(links) {
 };
 
 exports.default = _default;
-},{"html-literal":"node_modules/html-literal/build/src/index.js"}],"components/views/Home.js":[function(require,module,exports) {
+},{"html-literal":"node_modules/html-literal/build/src/index.js"}],"assets/Camino-36/Camino0-0.JPG":[function(require,module,exports) {
+module.exports = "/Camino0-0.95a21ccc.JPG";
+},{}],"components/views/Home.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -375,6 +377,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _htmlLiteral = _interopRequireDefault(require("html-literal"));
+
+var _Camino = _interopRequireDefault(require("../../assets/Camino-36/Camino0-0.JPG"));
 
 var _templateObject;
 
@@ -388,11 +392,11 @@ var kelvinToFahrenheit = function kelvinToFahrenheit(kelvinTemp) {
 
 
 var _default = function _default(st) {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section id=\"Home\">\n    <h3>\n      Temperature in ", " is\n      ", "F. It feels like\n      ", "F.\n    </h3>\n    <div class=\"boxtop\">\n      <p>GAME SPACE</p>\n    </div>\n\n    <div class=\"box\">\n      <button>\n        Your Hand\n      </button>\n      <button>\n        Computer\n      </button>\n    </div>\n    <div class=\"buttonBar\">\n      <button>\n        New Game\n      </button>\n      <button>\n        Number of Players\n      </button>\n      <button>\n        Shuffle & Deal\n      </button>\n    </div>\n  </section>\n"])), st.weather.city, kelvinToFahrenheit(st.weather.temp), kelvinToFahrenheit(st.weather.temp));
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section id=\"Home\">\n    <h3>\n      Temperature in ", " is\n      ", "F. It feels like\n      ", "F.\n    </h3>\n    <div class=\"boxtop\">\n      <p>GAME SPACE</p>\n    </div>\n\n    <div class=\"box\">\n      <section>\n        <img class=\"cardPicture\" src=\"", "\" />\n      </section>\n    </div>\n    <div class=\"buttonBar\">\n      <button>\n        New Game\n      </button>\n      <button>\n        Number of Players\n      </button>\n      <button>\n        Shuffle & Deal\n      </button>\n    </div>\n  </section>\n"])), st.weather.city, kelvinToFahrenheit(st.weather.temp), kelvinToFahrenheit(st.weather.temp), _Camino.default);
 };
 
 exports.default = _default;
-},{"html-literal":"node_modules/html-literal/build/src/index.js"}],"components/views/Instructions.js":[function(require,module,exports) {
+},{"html-literal":"node_modules/html-literal/build/src/index.js","../../assets/Camino-36/Camino0-0.JPG":"assets/Camino-36/Camino0-0.JPG"}],"components/views/Instructions.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -22974,7 +22978,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51048" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64760" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -4,13 +4,13 @@ import logo from "../assets/Dbl7Logo.png";
 export default () => html`
   <header>
     <div class="title-bar">
-      <img src="${logo}" />
+      <img class="title-img" src="${logo}" />
       <section id="title">
         <h1>DOUBLE-7</h1>
         <h2>A religious "dominoes-style" card game for all ages!</h2>
       </section>
 
-      <img src="${logo}" />
+      <img class="title-img" src="${logo}" />
     </div>
     <br />
   </header>

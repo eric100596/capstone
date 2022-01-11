@@ -34,7 +34,6 @@ margin: auto;
   font-size: 100px;
   color: white;;
   text-align: center;
-  ;
 }
 
 #title > h2 {
@@ -85,13 +84,18 @@ h4 {
 }
 
 .box {
-  width: 800px;
+  max-width: 90%;
   height: 500px;
   border: 5px solid white;
   margin-left: auto;
   margin-bottom: auto;
   margin-right: auto;
   text-align: center;
+}
+
+.cardPicture {
+  border: 5px solid red;
+  height: 50px;
 }
 
 #Home > div.box > button:nth-child(2){
@@ -168,6 +172,7 @@ a {
 @media (max-width: 815px) {
   header, .box, #title {
     display: flex;
+    /* background-color: aqua; */
     flex-direction: column;
     width: 100%;
     height: min-content;
@@ -176,7 +181,12 @@ a {
   }
 }
 
-@media (min-width: 815px) {
+@media (max-width: 815px) {
+  .title-img {
+    display: none;
+  }
+}
+/* @media (min-width: 815px) {
   header, .box, #title {
     display: flex;
     flex-direction: column;
@@ -186,7 +196,9 @@ a {
     align-items: center;
     margin-bottom: 8px;
   }
-}
+} */
+
+
 
 nav > .fa-bars {
   color: white;

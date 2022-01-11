@@ -1,4 +1,5 @@
 import html from "html-literal";
+import card from "../../assets/Camino-36/Camino0-0.JPG";
 
 const kelvinToFahrenheit = kelvinTemp =>
   Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
@@ -16,12 +17,9 @@ export default (st) => html`
     </div>
 
     <div class="box">
-      <button>
-        Your Hand
-      </button>
-      <button>
-        Computer
-      </button>
+      <section>
+        <img class="cardPicture" src="${card}" />
+      </section>
     </div>
     <div class="buttonBar">
       <button>
