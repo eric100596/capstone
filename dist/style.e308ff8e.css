@@ -29,21 +29,17 @@ margin: auto;
   width: 400px;
   padding-left: 50px;
   padding-right: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  text-align: center;
+  color: white;
 }
-
 
 #title > h1 {
   font-family: cursive, 'Times New Roman', Times, serif;
   font-size: 90px;
   color: white;;
   text-align: center;
-}
-
-#title > h3 {
-  font-family: Georgia, 'Times New Roman', Times, serif, 'Times New Roman', Times, serif;
-  font-size: 14px;
-  text-align: center;
-  color: white;
 }
 
 #games > tbody > tr > th {
@@ -213,14 +209,15 @@ a {
 }
 
 @media (max-width: 815px) {
-  header, .box, #title {
-    display: flex;
+  header, .box {
+    /* display: flex; */
     /* background-color: aqua; */
     flex-direction: column;
     width: 100%;
-    height: min-content;
+    /* height: min-content; */
     justify-content: space-between;
     align-items: center;
+    text-align: center;
   }
 }
 
