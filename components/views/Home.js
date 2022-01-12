@@ -25,18 +25,18 @@ export default (st) => html`
       <div class="p1">
       <img class="cardPicture1" src="${card1}" />
       </div>
-      <div class="p23">
+      <!-- <div class="p23">
       <img class="cardPicture2" src="${card2}" />
       <img class="cardPicture3" src="${card3}" />
-      </div>
+      </div> -->
 
-        <div class="p4">
-        <img class="cardPicture4" src="${card4}" />
+        <div class="C">
+        <img class="cardPicture4" src="${card6}" />
         </div>
-        <div class="p5C">
+        <!-- <div class="p45">
         <img class="cardPicture5" src="${card5}" />
         <img class="cardPicture6" src="${card6}" />
-        </div>
+        </div> -->
 
       </div>
     </div>
