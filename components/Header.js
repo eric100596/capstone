@@ -7,7 +7,7 @@ export default () => html`
       <img class="title-img" src="${logo}" />
       <section id="title">
         <h1>DOUBLE-7</h1>
-        <h2>A religious "dominoes-style" card game for all ages!</h2>
+        <h3>A religious "dominoes-style" card game for all ages!</h3>
       </section>
 
       <img class="title-img" src="${logo}" />
