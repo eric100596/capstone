@@ -339,7 +339,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var _default = function _default() {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <header>\n    <div class=\"title-bar\">\n      <img class=\"title-img\" src=\"", "\" />\n      <section id=\"title\">\n        <h1>DOUBLE-7</h1>\n        <h2>A religious \"dominoes-style\" card game for all ages!</h2>\n      </section>\n\n      <img class=\"title-img\" src=\"", "\" />\n    </div>\n    <br />\n  </header>\n"])), _Dbl7Logo.default, _Dbl7Logo.default);
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <header>\n    <div class=\"title-bar\">\n      <img class=\"title-img\" src=\"", "\" />\n      <section id=\"title\">\n        <h1>DOUBLE-7</h1>\n        <h3>A religious \"dominoes-style\" card game for all ages!</h3>\n      </section>\n\n      <img class=\"title-img\" src=\"", "\" />\n    </div>\n    <br />\n  </header>\n"])), _Dbl7Logo.default, _Dbl7Logo.default);
 };
 
 exports.default = _default;
@@ -22998,7 +22998,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50276" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53949" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
