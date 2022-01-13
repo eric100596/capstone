@@ -42,7 +42,7 @@ export default (st) => html`
     </div>
     <div class="buttonBar">
       <button>
-        <a href="" onClick="alert('Lets play Double 7!')"
+        <a href="" onClick="alert('Lets play Double-7!')"
         >New Game</a>
       </button>
       <button>
