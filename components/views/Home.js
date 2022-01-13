@@ -42,13 +42,17 @@ export default (st) => html`
     </div>
     <div class="buttonBar">
       <button>
-        New Game
+        <a href="" onClick="alert('Lets play Double 7!')"
+        >New Game</a>
       </button>
       <button>
-        Number of Players
+      <a href="" onClick="alert('You can choose up to 6 players!')"
+        >Number of Players</a>
       </button>
       <button>
-        Shuffle & Deal
+      <a href="" onClick="alert('Here we go!')"
+        >Shuffle & Deal</a>
+
       </button>
     </div>
   </section>

@@ -412,7 +412,7 @@ var kelvinToFahrenheit = function kelvinToFahrenheit(kelvinTemp) {
 
 
 var _default = function _default(st) {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section id=\"Home\">\n    <h3>\n      Temperature in ", " is\n      ", "F. It feels like\n      ", "F.\n    </h3>\n    <div class=\"boxtop\">\n      <p>GAME SPACE</p>\n    </div>\n\n    <div class=\"box\">\n      <div class=\"p1\">\n      <img class=\"cardPicture1\" src=\"", "\" />\n      </div>\n      <!-- <div class=\"p23\">\n      <img class=\"cardPicture2\" src=\"", "\" />\n      <img class=\"cardPicture3\" src=\"", "\" />\n      </div> -->\n\n        <div class=\"C\">\n        <img class=\"cardPicture4\" src=\"", "\" />\n        </div>\n        <!-- <div class=\"p45\">\n        <img class=\"cardPicture5\" src=\"", "\" />\n        <img class=\"cardPicture6\" src=\"", "\" />\n        </div> -->\n\n      </div>\n    </div>\n    <div class=\"buttonBar\">\n      <button>\n        New Game\n      </button>\n      <button>\n        Number of Players\n      </button>\n      <button>\n        Shuffle & Deal\n      </button>\n    </div>\n  </section>\n"])), st.weather.city, kelvinToFahrenheit(st.weather.temp), kelvinToFahrenheit(st.weather.temp), _player.default, _player2.default, _player3.default, _computer.default, _player5.default, _computer.default);
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section id=\"Home\">\n    <h3>\n      Temperature in ", " is\n      ", "F. It feels like\n      ", "F.\n    </h3>\n    <div class=\"boxtop\">\n      <p>GAME SPACE</p>\n    </div>\n\n    <div class=\"box\">\n      <div class=\"p1\">\n      <img class=\"cardPicture1\" src=\"", "\" />\n      </div>\n      <!-- <div class=\"p23\">\n      <img class=\"cardPicture2\" src=\"", "\" />\n      <img class=\"cardPicture3\" src=\"", "\" />\n      </div> -->\n\n        <div class=\"C\">\n        <img class=\"cardPicture4\" src=\"", "\" />\n        </div>\n        <!-- <div class=\"p45\">\n        <img class=\"cardPicture5\" src=\"", "\" />\n        <img class=\"cardPicture6\" src=\"", "\" />\n        </div> -->\n\n      </div>\n    </div>\n    <div class=\"buttonBar\">\n      <button>\n        <a href=\"\" onClick=\"alert('Lets play Double 7!')\"\n        >New Game</a>\n      </button>\n      <button>\n      <a href=\"\" onClick=\"alert('You can choose up to 6 players!')\"\n        >Number of Players</a>\n      </button>\n      <button>\n      <a href=\"\" onClick=\"alert('Here we go!')\"\n        >Shuffle & Deal</a>\n\n      </button>\n    </div>\n  </section>\n"])), st.weather.city, kelvinToFahrenheit(st.weather.temp), kelvinToFahrenheit(st.weather.temp), _player.default, _player2.default, _player3.default, _computer.default, _player5.default, _computer.default);
 };
 
 exports.default = _default;
@@ -22998,7 +22998,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52190" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55811" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
