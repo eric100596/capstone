@@ -210,11 +210,8 @@ a {
 
 @media (max-width: 815px) {
   header, .box {
-    /* display: flex; */
-    /* background-color: aqua; */
     flex-direction: column;
     width: 100%;
-    /* height: min-content; */
     justify-content: space-between;
     align-items: center;
     text-align: center;
