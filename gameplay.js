@@ -2,7 +2,7 @@ import card from "./assets/Camino-36/*.JPG";
 export default () = {
 
 //declare card elements
-const deckValues = [
+let deckValues = [
   { sideA: 0, sideB: 0, picture: "/assets/Camino-36/Camino0-0.JPG" },
   { sideA: 0, sideB: 1, picture: "/assets/Camino-36/Camino0-1.JPG" },
   { sideA: 0, sideB: 2, picture: "/assets/Camino-36/Camino0-2.JPG" },
