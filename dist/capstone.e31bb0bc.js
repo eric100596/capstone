@@ -454,7 +454,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var _default = function _default() {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <div id=\"about\">\n    <h3>About This Game</h3>\n    <p>\n      This game is played like dominoes, but there is a twist! This deck has 36\n      cards instead of the 28 that would be in a traditional dominoes game.\n      Also, each card has an inspirational word on it from the Bible chosen\n      specifically to remind players to remain positive while playing the game.\n      The game was developed by Knowble, and is considered one of the best\n      versions of game designed to bring generations of families together, while\n      at the same time teaching foundational religious content.\n    </p>\n  </div>\n"])));
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <div id=\"about\">\n    <h3>About This Game</h3>\n    <p>\n      What do the words \"Knowledge\", \"Temperance\", \"Respect\", \"Joy\", \"Prudence\",\n      \"Honesty\", \"Vision\", and \"Liberty\" have in common?\n      <br />\n      <br />\n      They are all words that, when applied, will yield positive results. They\n      are also all words you will find not only in the Bible, but on each of the\n      cards in this game!\n      <br />\n      <br />\n      This game is played like dominoes, but there is a twist! This deck has 36\n      cards instead of the 28 that would be in a traditional dominoes game.\n      Also, each card has an inspirational word on it from the Bible chosen\n      specifically to remind players to remain positive while playing the game.\n      The game was developed by Knowble, and is considered one of the best\n      versions of game designed to bring generations of families together, while\n      at the same time teaching foundational religious content.\n    </p>\n  </div>\n"])));
 };
 
 exports.default = _default;
@@ -22998,7 +22998,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61824" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64375" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
