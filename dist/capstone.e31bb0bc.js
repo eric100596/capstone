@@ -496,7 +496,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var _default = function _default() {
-  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section>\n    <div class=\"site1\">\n      <a href=\"http://www.know-ble.com\">Check out this website!</a>\n    </div>\n\n    <div>\n      <p class=\"p1\">And/Or, complete the form below</p>\n      <form action=\"https://formspree.io/f/mjvlbabl\" method=\"POST\">\n        <label for=\"name\">Name:</label>\n        <input\n          type=\"text\"\n          name=\"name\"\n          id=\"name\"\n          placeholder=\"Full Name\"\n          required\n        />\n\n        <label for=\"email\">Email:</label>\n        <input\n          type=\"email\"\n          name=\"email\"\n          id=\"email\"\n          placeholder=\"you@somewhere.com\"\n        />\n\n        <label for=\"phone\">Phone:</label>\n        <input type=\"tel\" name=\"phone\" id=\"phone\" />\n\n        <div>\n          <br />\n          <label for=\"msg\">Enter your message here:</label>\n          <br />\n          <textarea name=\"msg\" id=\"msg\" cols=\"30\" rows=\"10\"></textarea>\n          <br />\n          <input type=\"submit\" value=\"Submit\" />\n        </div>\n\n        <br />\n      </form>\n    </div>\n  </section>\n"])));
+  return (0, _htmlLiteral.default)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  <section>\n    <div class=\"site1\">\n      <a> For more information about Knowble</a>\n      <a href=\"http://www.know-ble.com\">Check out this website!</a>\n    </div>\n\n    <div>\n      <p class=\"p1\">And/Or, complete the form below</p>\n      <form action=\"https://formspree.io/f/mjvlbabl\" method=\"POST\">\n        <label for=\"name\">Name:</label>\n        <input\n          type=\"text\"\n          name=\"name\"\n          id=\"name\"\n          placeholder=\"Full Name\"\n          required\n        />\n\n        <label for=\"email\">Email:</label>\n        <input\n          type=\"email\"\n          name=\"email\"\n          id=\"email\"\n          placeholder=\"you@somewhere.com\"\n        />\n\n        <label for=\"phone\">Phone:</label>\n        <input type=\"tel\" name=\"phone\" id=\"phone\" />\n\n        <div>\n          <br />\n          <label for=\"msg\">Enter your message here:</label>\n          <br />\n          <textarea name=\"msg\" id=\"msg\" cols=\"30\" rows=\"10\"></textarea>\n          <br />\n          <input type=\"submit\" value=\"Submit\" />\n        </div>\n\n        <br />\n      </form>\n    </div>\n  </section>\n"])));
 };
 
 exports.default = _default;
@@ -22998,7 +22998,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60466" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61824" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

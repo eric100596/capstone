@@ -3,6 +3,7 @@ import html from "html-literal";
 export default () => html`
   <section>
     <div class="site1">
+      <a> For more information about Knowble</a>
       <a href="http://www.know-ble.com">Check out this website!</a>
     </div>
 
